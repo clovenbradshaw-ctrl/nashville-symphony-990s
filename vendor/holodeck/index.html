@@ -3393,7 +3393,7 @@ class Component extends DCLogic {
     }
     const MF = {};
     try { const r = await fetch(raw + enc(prefix + 'manifest.csv'), { cache: 'no-cache' }); if (r.ok) { const L = (await r.text()).trim().split('\n'); const H = L.shift().split(','); L.forEach(l => { const c = l.split(','); const o = {}; H.forEach((h, i) => { o[h.trim()] = (c[i] || '').trim(); }); if (o.file) MF[prefix + o.file] = o; }); } } catch (e) {}
-    const docs = []; let n = 0;
+    const docs = []; let n = 0, had = 0;
     for (const f of files) {
       say('Reading filing ' + (++n) + ' of ' + files.length + '…');
       try {
@@ -3412,9 +3412,13 @@ class Component extends DCLogic {
           let text = ''; const pages = []; pg.forEach(t => { pages.push(text.length); text += t.replace(/\s+$/, '') + '\n\n'; });
           r.text = text; r.pages = pages; r.ocr = true; r.note = 'The pages shown are the IRS original; the text read from them is OCR of the scan, so a figure can be misread.';
         }
-        docs.push({ ...r, title: ttl || r.title, year: m.tax_year ? +m.tax_year : r.year, type: 'Form ' + (m.form || '990'), url: m.view_url || m.irs_url || ('https://github.com/' + owner + '/' + repo + '/blob/HEAD/' + f.path) });
+        const url = m.view_url || m.irs_url || ('https://github.com/' + owner + '/' + repo + '/blob/HEAD/' + f.path);
+        const ex = (this.state.added[this.corpusId()] || []).find(d => d.url === url); // already loaded on an earlier visit: keep it, but make sure its original PDF is stored (earlier versions could not store it)
+        if (ex) { if (r.pdf && !(await idbGet('pdf:' + ex.id).catch(() => null))) await idbPut('pdf:' + ex.id, r.pdf).catch(e => console.warn('Could not keep the original PDF of ' + ex.title + ':', e)); had++; continue; }
+        docs.push({ ...r, title: ttl || r.title, year: m.tax_year ? +m.tax_year : r.year, type: 'Form ' + (m.form || '990'), url });
       } catch (e) {}
     }
+    if (!docs.length && had) { A.status = ''; this.setState({ busy: '' }); this.forceUpdate(); return; } // every filing was already here
     if (!docs.length) { A.error = 'Nothing readable came back from ' + prefix + '.'; A.status = ''; this.setState({ busy: '' }); return; }
     A.status = 'Loaded ' + plural(docs.length, 'filing') + ' from ' + owner + '/' + repo + '.';
     await this.addDocs(docs, { keepOpen: opt.keepOpen });
