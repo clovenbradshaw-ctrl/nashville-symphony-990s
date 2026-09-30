@@ -12,3 +12,6 @@ Association: tax years 2011-2023. Endowment Fund: 2011-2017. ProPublica's struct
 
 ## Use in Holodeck
 Add panel -> enter `<owner>/nashville-symphony-990s` once pushed to GitHub.
+
+## Audit-derived supplement
+`data/raw/archive-org/` holds OCR text of the Nashville Symphony audited financial statements for FY2011/2010 (Internet Archive mirror of a DocumentCloud upload). `data/processed/audit-derived.csv` records the balance-sheet totals that parse cleanly: FY2010 is new; FY2011 matches the 990. Revenue and expense lines are not extracted (OCR column layout is scrambled).
