@@ -3387,9 +3387,10 @@ class Component extends DCLogic {
     { const pdfStems = new Set(files.filter(x => /\.pdf$/i.test(x.path)).map(x => x.path.replace(/\.pdf$/i, ''))); for (let i = files.length - 1; i >= 0; i--) if (/\.xml$/i.test(files[i].path) && pdfStems.has(files[i].path.replace(/\.xml$/i, ''))) files.splice(i, 1); } // an XML is skipped when the same filing has a PDF
     if (!files.length) { A.error = 'No PDF filings under ' + prefix + ' in ' + owner + '/' + repo + '.'; A.status = ''; this.setState({ busy: '' }); return; }
     hdTraceStart(owner + '/' + repo + ' filings');
-    { // this collection is the filings: drop repo files (CSVs, scripts, JSON) a plain ?repo= visit left behind; filings and unrelated documents stay
-      const cid = this.corpusId(); const mine = d => d.url && d.url.startsWith('https://github.com/' + owner + '/' + repo + '/');
-      if ((this.state.added[cid] || []).some(mine)) { const added = { ...this.state.added, [cid]: this.state.added[cid].filter(d => !mine(d)) }; this.saveAdded(added); this.state.added = added; this.setState({ added }); }
+    { // this collection is the filings: drop repo files (CSVs, scripts, JSON) a plain ?repo= visit left behind, and keep one copy (the newest) of each filing; unrelated documents stay
+      const cid = this.corpusId(); const mine = d => d.url && d.url.startsWith('https://github.com/' + owner + '/' + repo + '/'); const list = this.state.added[cid] || [];
+      const seenT = new Set(); const kept = list.slice().reverse().filter(d => { if (!/^Form /.test(d.type || '')) return true; if (seenT.has(d.title)) return false; seenT.add(d.title); return true; }).reverse().filter(d => !mine(d));
+      if (kept.length !== list.length) { const added = { ...this.state.added, [cid]: kept }; this.saveAdded(added); this.state.added = added; this.setState({ added }); }
     }
     const MF = {};
     try { const r = await fetch(raw + enc(prefix + 'manifest.csv'), { cache: 'no-cache' }); if (r.ok) { const L = (await r.text()).trim().split('\n'); const H = L.shift().split(','); L.forEach(l => { const c = l.split(','); const o = {}; H.forEach((h, i) => { o[h.trim()] = (c[i] || '').trim(); }); if (o.file) MF[prefix + o.file] = o; }); } } catch (e) {}
@@ -3418,7 +3419,7 @@ class Component extends DCLogic {
           r.text = text; r.pages = pages; r.ocr = true; r.note = 'The pages shown are the IRS original; the text read from them is OCR of the scan, so a figure can be misread.';
         }
         const url = m.view_url || m.irs_url || ('https://github.com/' + owner + '/' + repo + '/blob/HEAD/' + f.path);
-        let ex = (this.state.added[this.corpusId()] || []).find(d => d.url === url);
+        let ex = (this.state.added[this.corpusId()] || []).find(d => d.url === url || (ttl && d.title === ttl));
         if (ex && r.ocr && !ex.ocrWords) { const cid = this.corpusId(), old = ex.id; const added = { ...this.state.added, [cid]: this.state.added[cid].filter(d => d.id !== old) }; this.saveAdded(added); this.state.added = added; this.setState({ added }); ex = null; } // text from an earlier OCR does not match the word boxes: replace it // already loaded on an earlier visit: keep it, but make sure its original PDF is stored (earlier versions could not store it)
         if (ex) { if (r.pdf && !(await idbGet('pdf:' + ex.id).catch(() => null))) await idbPut('pdf:' + ex.id, r.pdf).catch(e => console.warn('Could not keep the original PDF of ' + ex.title + ':', e)); if (r.ocr && !(await idbGet('ocr:' + ex.id).catch(() => null))) await idbPut('ocr:' + ex.id, r.ocr).catch(() => {}); had++; continue; }
         docs.push({ ...r, title: ttl || r.title, year: m.tax_year ? +m.tax_year : r.year, type: 'Form ' + (m.form || '990'), url, extra: r.ocr ? { ...(r.extra || {}), ocrWords: true } : r.extra });
@@ -4908,7 +4909,7 @@ class Component extends DCLogic {
   }
   typeChips(docs) {
     const off = this.state.offDocs || {}; const by = new Map(); docs.forEach(d => { const t = this.recType(d); by.set(t, (by.get(t) || 0) + 1); });
-    if (by.size < 2) return [];
+    if (!by.size) return [];
     const on = docs.filter(d => !off[d.id]); const ts = new Set(on.map(d => this.recType(d))); const active = on.length && ts.size === 1 ? [...ts][0] : null;
     const only = t => { const o = {}; docs.forEach(d => { if (this.recType(d) !== t) o[d.id] = true; }); return o; };
     return [...by].sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0])).map(([t, n]) => ({ label: t, n: String(n), bd: active === t ? '#8b5cf6' : 'var(--line2)', bg: active === t ? 'var(--sel)' : 'transparent', col: active === t ? 'var(--ink)' : 'var(--mut)', onClick: () => this.setState({ offDocs: active === t ? {} : only(t) }) }));
@@ -5412,7 +5413,7 @@ class Component extends DCLogic {
       svTabs: tabs.map(t => ({ label: t.label, n: t.n, bd: t.id === svTab ? '#8b5cf6' : 'transparent', col: t.id === svTab ? 'var(--ink)' : 'var(--mut)', onClick: () => this.setState({ svTab: t.id }) })),
       svCols: tCols.map(([k, l]) => ({ label: l + (svSort === k ? (svDir > 0 ? ' ↑' : ' ↓') : ''), onClick: () => this.setState({ svSort: k, svDir: svSort === k ? -svDir : (k === 'title' || k === 'publisher' ? 1 : -1) }) })),
       svTables: tables, svCardGroups: svGroup === 'one' ? [{ label: 'All sources', n: String(allSrcItems.length), desc: '', items: allSrcItems.map(x => x.it), hasMore: false }] : svGroup === 'tabs' ? (svTab === '__all' ? srcGroups : svTab === 'Recordings' ? (() => { const vg = srcGroups.filter(g => /^(Video|Meeting recording)$/.test(g.label)); const items = vg.flatMap(g => g.items).map(it => ({ it, d: docByTitle.get(it.title) || {} })).sort((x, y) => (y.d.published || String(y.d.year || '')).localeCompare(x.d.published || String(x.d.year || ''))).map(x => x.it); return [...(items.length ? [{ label: 'Video', n: String(items.length), desc: 'Meetings and other recordings. Open one to watch it with its transcript beside it.', items, hasMore: false }] : []), ...srcGroups.filter(g => FAM(g.label) === 'Recordings' && !/^(Video|Meeting recording)$/.test(g.label))]; })() : srcGroups.filter(g => FAM(g.label) === svTab)) : srcGroups };
-    svVals.svTypes = this.typeChips(A.docs.filter(d => this._cnt && this._cnt.has(d.id))); svVals.hasSvTypes = svVals.svTypes.length > 1;
+    svVals.svTypes = this.typeChips(A.docs.filter(d => this._cnt && this._cnt.has(d.id))); svVals.hasSvTypes = svVals.svTypes.length > 0;
     const undatedDocs = A.docs.filter(d => !d.year);
     const noDateSt = F.filter(st => !st.ownDate);
     const gaps = [
@@ -5928,7 +5929,7 @@ class Component extends DCLogic {
     return {
       orb: { title: 'Names, nested by what they are tied to', note: 'Each name sits under the name it shares the most statements with, more than chance would give. Click a ring to open the names inside it, or a name to see the statements it appears in. Sources and Statements are the layers around it.', canBack: !!selName, back: () => this.setState({ sel: null }) },
       tl: { has: yrs.length > 1, min: mn, max: mx, val, label: val === mx ? 'Up to ' + mx + ' · everything' : 'Up to ' + val, onChange: e => { const v = +e.target.value; this.setState({ tMax: v >= mx ? null : v }); }, playLabel: this._play ? 'Stop' : 'Play', play, start: String(mn), end: String(mx) },
-      srcPick: { types: this.typeChips(kept), hasTypes: this.typeChips(kept).length > 1, open: !!S.srcOpen, label: S.srcOpen ? 'Done' : 'Choose sources', toggle: () => this.setState({ srcOpen: !S.srcOpen }), q: S.srcQ || '', onQ: e => this.setState({ srcQ: e.target.value }),
+      srcPick: { types: this.typeChips(kept), hasTypes: this.typeChips(kept).length > 0, open: !!S.srcOpen, label: S.srcOpen ? 'Done' : 'Choose sources', toggle: () => this.setState({ srcOpen: !S.srcOpen }), q: S.srcQ || '', onQ: e => this.setState({ srcQ: e.target.value }),
         count: (() => { const q = (S.srcQ || '').trim().toLowerCase(); const n = q ? kept.filter(d => d.title.toLowerCase().includes(q)).length : kept.length; return q ? n + ' match' : plural(n, 'source'); })() },
       srcT: kept.filter(d => { const q = (S.srcQ || '').trim().toLowerCase(); return !q || d.title.toLowerCase().includes(q); }).map(d => ({ box: off[d.id] ? 'transparent' : '#8b5cf6', label: d.title.length > 34 ? d.title.slice(0, 33) + '…' : d.title, tip: d.title, onClick: () => toggle(d.id), onOnly: () => only(d.id), bg: off[d.id] ? 'transparent' : 'var(--sel)', bd: off[d.id] ? 'var(--line)' : '#8b5cf6', col: off[d.id] ? 'var(--dim)' : 'var(--ink)', mark: off[d.id] ? '○' : '●' })),
       srcNote: nOn + ' of ' + kept.length + ' sources on', allOn: () => this.setState({ offDocs: {} }), someOff: nOn < kept.length,
