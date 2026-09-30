@@ -1078,6 +1078,7 @@ select option{background:var(--s1);color:var(--ink)}
             <span style="flex:1"></span>
             <div style="display:flex;border:1px solid var(--line2);border-radius:8px;overflow:hidden;margin:4px 0"><sc-for list="{{ svModes }}" as="k" hint-placeholder-count="2"><button onClick="{{ k.onClick }}" style="border:0;background:{{ k.bg }};color:{{ k.col }};padding:4px 12px;cursor:pointer;font:500 13px 'Hanken Grotesk';white-space:nowrap">{{ k.label }}</button></sc-for></div>
           </div>
+          <sc-if value="{{ hasSvTypes }}" hint-placeholder-val="{{ false }}"><div style="display:flex;gap:6px;flex-wrap:wrap;align-items:center;padding:8px 0 2px"><span style="font:500 12px 'JetBrains Mono',ui-monospace,monospace;letter-spacing:.06em;color:var(--dim)">TYPE</span><sc-for list="{{ svTypes }}" as="y" hint-placeholder-count="4"><button onClick="{{ y.onClick }}" style="cursor:pointer;display:flex;gap:6px;align-items:baseline;padding:3px 10px;border-radius:999px;border:1px solid {{ y.bd }};background:{{ y.bg }};color:{{ y.col }};font:500 13px 'Hanken Grotesk';white-space:nowrap">{{ y.label }}<span style="font:500 12px 'JetBrains Mono',ui-monospace,monospace;color:var(--dim)">{{ y.n }}</span></button></sc-for></div></sc-if>
           <sc-if value="{{ srcHiddenNote }}" hint-placeholder-val="{{ false }}"><span style="font:400 13px 'Hanken Grotesk';color:var(--dim);margin-top:6px">{{ srcHiddenNote }}</span></sc-if>
         </sc-if>
         <sc-if value="{{ svTable }}" hint-placeholder-val="{{ false }}">
@@ -1386,6 +1387,7 @@ select option{background:var(--s1);color:var(--ink)}
               <sc-if value="{{ someOff }}" hint-placeholder-val="{{ false }}"><button onClick="{{ allOn }}" style="padding:5px 11px;border-radius:8px;border:1px solid var(--line);background:var(--s1);color:var(--ink);font:500 13px 'Hanken Grotesk';cursor:pointer" style-hover="border-color:#8b5cf6">All on</button></sc-if>
               <button onClick="{{ srcPick.toggle }}" style="padding:5px 11px;border-radius:8px;border:1px solid var(--line2);background:var(--s1);color:var(--ink);font:500 13px 'Hanken Grotesk';cursor:pointer" style-hover="border-color:#8b5cf6">{{ srcPick.label }}</button>
             </div>
+            <sc-if value="{{ srcPick.hasTypes }}" hint-placeholder-val="{{ false }}"><div style="display:flex;gap:6px;flex-wrap:wrap;align-items:center;padding:8px 0 2px"><span style="font:500 12px 'JetBrains Mono',ui-monospace,monospace;letter-spacing:.06em;color:var(--dim)">TYPE</span><sc-for list="{{ srcPick.types }}" as="y" hint-placeholder-count="4"><button onClick="{{ y.onClick }}" style="cursor:pointer;display:flex;gap:6px;align-items:baseline;padding:3px 10px;border-radius:999px;border:1px solid {{ y.bd }};background:{{ y.bg }};color:{{ y.col }};font:500 13px 'Hanken Grotesk';white-space:nowrap">{{ y.label }}<span style="font:500 12px 'JetBrains Mono',ui-monospace,monospace;color:var(--dim)">{{ y.n }}</span></button></sc-for></div></sc-if>
             <sc-if value="{{ srcPick.open }}" hint-placeholder-val="{{ false }}">
               <div style="display:flex;gap:8px;align-items:center;flex-wrap:wrap">
                 <input value="{{ srcPick.q }}" onChange="{{ srcPick.onQ }}" placeholder="Filter sources" style="flex:1 1 220px;min-width:0;background:var(--bg);border:1px solid var(--line2);border-radius:8px;color:var(--ink);padding:6px 10px;outline:none;font:400 14px 'Hanken Grotesk'"></input>
@@ -2870,8 +2872,8 @@ function purgeLegacyHistory() {
   } catch (e) {}
   try { if (navigator.storage && navigator.storage.getDirectory) navigator.storage.getDirectory().then(async root => { try { await root.removeEntry('ohs-custody', { recursive: true }); } catch (e) {} }).catch(() => {}); } catch (e) {}
   try {
-    const r = indexedDB.open('fold-explorer', 1);
-    r.onsuccess = () => { try { const db = r.result; const tx = db.transaction('blobs', 'readwrite'); const st = tx.objectStore('blobs'); const keys = st.getAllKeys(); keys.onsuccess = () => { (keys.result || []).forEach(k => { const s = String(k); if (s === 'meet:ohs' || s.startsWith('html:ohs-') || s.startsWith('pdf:ohs-') || s.startsWith('wiki5:kb')) { try { st.delete(k); } catch (e) {} } }); }; } catch (e) {} };
+    const r = indexedDB.open('fold-explorer'); r.onupgradeneeded = () => { if (!r.result.objectStoreNames.contains('blobs')) r.result.createObjectStore('blobs'); }; // LOCAL PATCH: create the store, do not leave a bare database
+    r.onsuccess = () => { try { const db = r.result; db.onversionchange = () => db.close(); if (!db.objectStoreNames.contains('blobs')) return; const tx = db.transaction('blobs', 'readwrite'); const st = tx.objectStore('blobs'); const keys = st.getAllKeys(); keys.onsuccess = () => { (keys.result || []).forEach(k => { const s = String(k); if (s === 'meet:ohs' || s.startsWith('html:ohs-') || s.startsWith('pdf:ohs-') || s.startsWith('wiki5:kb')) { try { st.delete(k); } catch (e) {} } }); }; } catch (e) {} };
   } catch (e) {}
 }
 purgeLegacyHistory();
@@ -3018,7 +3020,11 @@ function docxToHtml(xml) {
 let _pdfjs = null;
 async function pdfLib() { if (_pdfjs) return _pdfjs; const m = await import('https://cdn.jsdelivr.net/npm/pdfjs-dist@4.4.168/build/pdf.min.mjs'); m.GlobalWorkerOptions.workerSrc = 'https://cdn.jsdelivr.net/npm/pdfjs-dist@4.4.168/build/pdf.worker.min.mjs'; _pdfjs = m; return m; }
 const PDF_MAX_PAGES = 300;
-function idbOpen() { return new Promise((res, rej) => { const r = indexedDB.open('fold-explorer', 1); r.onupgradeneeded = () => r.result.createObjectStore('blobs'); r.onsuccess = () => res(r.result); r.onerror = () => rej(r.error); }); }
+// LOCAL PATCH: the store was only created when this open happened to be the first to create the database; purgeLegacyHistory() below
+// used to be first and left it without 'blobs', so every idbPut failed silently and no PDF or page was ever kept. Opening with no pinned
+// version and adding the store when it is missing heals databases already in that state.
+function idbOpen() { return new Promise((res, rej) => { const r = indexedDB.open('fold-explorer'); r.onupgradeneeded = () => { if (!r.result.objectStoreNames.contains('blobs')) r.result.createObjectStore('blobs'); }; r.onerror = () => rej(r.error);
+  r.onsuccess = () => { const db = r.result; db.onversionchange = () => db.close(); if (db.objectStoreNames.contains('blobs')) return res(db); const v = db.version + 1; db.close(); const u = indexedDB.open('fold-explorer', v); u.onupgradeneeded = () => { if (!u.result.objectStoreNames.contains('blobs')) u.result.createObjectStore('blobs'); }; u.onsuccess = () => { u.result.onversionchange = () => u.result.close(); res(u.result); }; u.onerror = () => rej(u.error); }; }); }
 async function idbPut(k, v) { const db = await idbOpen(); return new Promise((res, rej) => { const tx = db.transaction('blobs', 'readwrite'); tx.objectStore('blobs').put(v, k); tx.oncomplete = () => res(); tx.onerror = () => rej(tx.error); }); }
 async function idbGet(k) { const db = await idbOpen(); return new Promise((res, rej) => { const q = db.transaction('blobs', 'readonly').objectStore('blobs').get(k); q.onsuccess = () => res(q.result); q.onerror = () => rej(q.error); }); }
 function wikiTitleOf(url) { const m = String(url).match(/^https?:\/\/en\.(?:m\.)?wikipedia\.org\/wiki\/([^#?]+)/); return m ? decodeURIComponent(m[1]) : null; }
@@ -4872,6 +4878,23 @@ class Component extends DCLogic {
   _saveFolds(folds) { const cid = this.corpusId(); const all = { ...this.metaAll() }; all[cid] = { ...(all[cid] || {}), __folds: folds }; this._meta = all; try { localStorage.setItem('fold-explorer-srcmeta', JSON.stringify(all)); } catch (e) {} this.setState({ metaVer: (this.state.metaVer || 0) + 1 }); }
   addFoldFromFilter(label, f, q, n) { label = (label || '').trim(); if (!label) return; const folds = this.myFolds(); if (folds.some(x => x.label === label)) return; this._saveFolds([...folds, { label, f, q, n }]); }
   removeFold(label) { this._saveFolds(this.myFolds().filter(x => x.label !== label)); }
+  // LOCAL PATCH: record type (what the file is: PDF, CSV, JSON ...) as a filter. It switches sources off with the same offDocs that
+  // "Choose sources" uses, so one click narrows every view (names, connections, figures), not just the source list.
+  recType(d) {
+    if (d.medium === 'Video' || d.medium === 'Audio' || d.medium === 'Image') return d.medium;
+    if (d.format === 'pdf') return 'PDF';
+    const ext = ((String(d.title || '').match(/\.([a-z0-9]{1,6})$/i) || String(d.url || '').split(/[?#]/)[0].match(/\.([a-z0-9]{1,6})$/i) || [])[1] || '').toLowerCase();
+    const M = { pdf: 'PDF', csv: 'CSV', tsv: 'CSV', json: 'JSON', jsonl: 'JSON', ndjson: 'JSON', md: 'Markdown', markdown: 'Markdown', txt: 'Text', text: 'Text', log: 'Text', xml: 'XML', html: 'Web page', htm: 'Web page',
+      py: 'Code', js: 'Code', ts: 'Code', sh: 'Code', rb: 'Code', go: 'Code', rs: 'Code', java: 'Code', c: 'Code', cpp: 'Code', sql: 'Code', doc: 'Word', docx: 'Word', xls: 'Spreadsheet', xlsx: 'Spreadsheet', ppt: 'Slides', pptx: 'Slides' };
+    return M[ext] || (d.type && d.type !== 'Repo file' && d.type !== 'Text' ? d.type : d.hasHtml || /^https?:/.test(d.url || '') ? 'Web page' : 'Text');
+  }
+  typeChips(docs) {
+    const off = this.state.offDocs || {}; const by = new Map(); docs.forEach(d => { const t = this.recType(d); by.set(t, (by.get(t) || 0) + 1); });
+    if (by.size < 2) return [];
+    const on = docs.filter(d => !off[d.id]); const ts = new Set(on.map(d => this.recType(d))); const active = on.length && ts.size === 1 ? [...ts][0] : null;
+    const only = t => { const o = {}; docs.forEach(d => { if (this.recType(d) !== t) o[d.id] = true; }); return o; };
+    return [...by].sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0])).map(([t, n]) => ({ label: t, n: String(n), bd: active === t ? '#8b5cf6' : 'var(--line2)', bg: active === t ? 'var(--sel)' : 'transparent', col: active === t ? 'var(--ink)' : 'var(--mut)', onClick: () => this.setState({ offDocs: active === t ? {} : only(t) }) }));
+  }
   discard(docId) { const cid = this.corpusId(); const added = { ...this.state.added, [cid]: (this.state.added[cid] || []).filter(d => d.id !== docId) }; this.saveAdded(added); this.setState({ added, view: 'sources', readDoc: null, sel: null, just: null }); }
   // copies a paradigm's own-added docs into a brand-new workspace (never removes them from where they are --
   // a fork branches, it doesn't cut); base/sample docs in the cluster stay in the original, since they aren't this browser's to move
@@ -4951,7 +4974,7 @@ class Component extends DCLogic {
     } catch (e) { hdT('hang', 'fail', 'Hang decision failed (' + e.message + '); proceeding unhung'); }
     nd.forEach(d => { d.status = aopt && aopt.open ? 'seen' : 'source'; });
     T.focus = new Set(nd.map(d => d.id)); nd.forEach(d => hdT('store', 'mint', 'Stored \u201c' + hdCut(d.title, 60) + '\u201d as ' + d.id + (list[nd.indexOf(d)].html ? ' \u00b7 full page kept; ' + d.text.length.toLocaleString() + ' characters indexed for search' + (d.text.length >= 60000 ? ' (the cap; the reading below uses the whole page)' : '') : ' \u00b7 ' + d.text.length.toLocaleString() + ' characters kept'), { doc: d.id }));
-    nd.forEach((d, i) => { const x = list[i]; if (x.html) { this._html[d.id] = x.html; idbPut('html:' + d.id, x.html).catch(() => {}); } if (x.pdf) idbPut('pdf:' + d.id, x.pdf).catch(() => {}); if (x.buf) idbPut('media:' + d.id, x.buf).catch(() => {}); });
+    nd.forEach((d, i) => { const x = list[i]; if (x.html) { this._html[d.id] = x.html; idbPut('html:' + d.id, x.html).catch(() => {}); } if (x.pdf) idbPut('pdf:' + d.id, x.pdf).catch(e => console.warn('Could not keep the original PDF of ' + d.title + ':', e)); if (x.buf) idbPut('media:' + d.id, x.buf).catch(() => {}); });
     let engNote = null; { const live = nd.filter(d => d.text && !d.measured); let ok = 0, miss = 0;
       if (live.length) this.setState({ busy: 'Reading ' + (live.length === 1 ? 'it' : live.length + ' sources') + ' with the engine…' });
       for (const d of live) { const t0 = HD_TR ? performance.now() - HD_TR.t0 : 0, got = await hdEngineRead(d.title, d.text);
@@ -5371,6 +5394,7 @@ class Component extends DCLogic {
       svTabs: tabs.map(t => ({ label: t.label, n: t.n, bd: t.id === svTab ? '#8b5cf6' : 'transparent', col: t.id === svTab ? 'var(--ink)' : 'var(--mut)', onClick: () => this.setState({ svTab: t.id }) })),
       svCols: tCols.map(([k, l]) => ({ label: l + (svSort === k ? (svDir > 0 ? ' ↑' : ' ↓') : ''), onClick: () => this.setState({ svSort: k, svDir: svSort === k ? -svDir : (k === 'title' || k === 'publisher' ? 1 : -1) }) })),
       svTables: tables, svCardGroups: svGroup === 'one' ? [{ label: 'All sources', n: String(allSrcItems.length), desc: '', items: allSrcItems.map(x => x.it), hasMore: false }] : svGroup === 'tabs' ? (svTab === '__all' ? srcGroups : svTab === 'Recordings' ? (() => { const vg = srcGroups.filter(g => /^(Video|Meeting recording)$/.test(g.label)); const items = vg.flatMap(g => g.items).map(it => ({ it, d: docByTitle.get(it.title) || {} })).sort((x, y) => (y.d.published || String(y.d.year || '')).localeCompare(x.d.published || String(x.d.year || ''))).map(x => x.it); return [...(items.length ? [{ label: 'Video', n: String(items.length), desc: 'Meetings and other recordings. Open one to watch it with its transcript beside it.', items, hasMore: false }] : []), ...srcGroups.filter(g => FAM(g.label) === 'Recordings' && !/^(Video|Meeting recording)$/.test(g.label))]; })() : srcGroups.filter(g => FAM(g.label) === svTab)) : srcGroups };
+    svVals.svTypes = this.typeChips(A.docs.filter(d => this._cnt && this._cnt.has(d.id))); svVals.hasSvTypes = svVals.svTypes.length > 1;
     const undatedDocs = A.docs.filter(d => !d.year);
     const noDateSt = F.filter(st => !st.ownDate);
     const gaps = [
@@ -5605,9 +5629,9 @@ class Component extends DCLogic {
       names.forEach(x => { const o = oddN.get(x.label); if (o) { x.col = 'var(--amber)'; x.label += ' ?'; x.tip = 'Archon Fort: ' + o.why; } });
       const more = J.linked.length + J.fresh.length - names.length; if (more > 0) names.push({ label: '+' + more + ' more', w: 400, col: 'var(--dim)', tip: 'All names', onClick: () => this.go('names') });
       return { title: J.title, summary: [plural(J.n, 'statement'), J.linked.length ? plural(J.linked.length, 'name') + ' already here' : '', J.echoN ? plural(J.echoN, 'echo', 'echoes') : ''].filter(Boolean).join(' · '),
-        hasOdd: !!(J.odd && J.odd.some(o => o.standing === 'stands')), odd: (J.odd || []).filter(o => o.standing === 'stands').slice(0, 3).map(o => ({ tag: 'Odd', label: o.subject, why: o.short, onInspect: () => player(o.at), onCorrect: () => this.fileCorrection(o.subject, '"' + o.subject + '" is not a name') })),
-        oddMore: (() => { const st = (J.odd || []).filter(o => o.standing === 'stands').length, ct = (J.odd || []).filter(o => o.standing === 'contested').length; const parts = [st > 3 ? (st - 3) + ' more odd' : '', ct ? ct + ' disputed' : ''].filter(Boolean); return parts.length ? parts.join(', ') + ', in the replay' : ''; })(), onOddAll: () => { const f = (J.odd || [])[0]; if (f) player(f.at); },
-        hasNames: names.length > 0, names, ...(() => { const groups = new Map(), lines = []; J.notes.forEach(n => { const m = /^From (\S+) · (.+)$/.exec(n); if (m) { if (!groups.has(m[1])) groups.set(m[1], []); groups.get(m[1]).push({ path: m[2] }); } else lines.push({ text: n }); });
+        hasOdd: false, odd: (J.odd || []).filter(o => o.standing === 'stands').slice(0, 3).map(o => ({ tag: 'Odd', label: o.subject, why: o.short, onInspect: () => player(o.at), onCorrect: () => this.fileCorrection(o.subject, '"' + o.subject + '" is not a name') })),
+        oddMore: (() => { const st = (J.odd || []).filter(o => o.standing === 'stands').length, ct = (J.odd || []).filter(o => o.standing === 'contested').length; const parts = [st > 3 ? (st - 3) + ' more odd' : '', ct ? ct + ' disputed' : ''].filter(Boolean); return ''; })(), onOddAll: () => { const f = (J.odd || [])[0]; if (f) player(f.at); },
+        hasNames: false, names, ...(() => { const groups = new Map(), lines = [], seenN = new Map(); J.notes.forEach(n => { const m = /^From (\S+) · (.+)$/.exec(n); if (m) { if (!groups.has(m[1])) groups.set(m[1], []); groups.get(m[1]).push({ path: m[2] }); } else if (seenN.has(n)) { const o = seenN.get(n); o.k++; o.text = n + ' (' + o.k + ' documents)'; } else { const o = { text: n, k: 1 }; seenN.set(n, o); lines.push(o); } });
           return { noteLines: lines, noteGroups: [...groups].map(([repo, files]) => ({ repo, count: plural(files.length, 'file'), files })) }; })(),
         hasReplay: !!tr, onReplay: () => tr && import(new URL('holodeck-ingest-player.js', location.href).href).then(M => M.open(tr)),
         onRead: () => this.read(J.first), onConnections: () => this.go('connections'), onPatterns: () => this.go('patterns') }; })() : { names: [] };
@@ -5886,7 +5910,7 @@ class Component extends DCLogic {
     return {
       orb: { title: 'Names, nested by what they are tied to', note: 'Each name sits under the name it shares the most statements with, more than chance would give. Click a ring to open the names inside it, or a name to see the statements it appears in. Sources and Statements are the layers around it.', canBack: !!selName, back: () => this.setState({ sel: null }) },
       tl: { has: yrs.length > 1, min: mn, max: mx, val, label: val === mx ? 'Up to ' + mx + ' · everything' : 'Up to ' + val, onChange: e => { const v = +e.target.value; this.setState({ tMax: v >= mx ? null : v }); }, playLabel: this._play ? 'Stop' : 'Play', play, start: String(mn), end: String(mx) },
-      srcPick: { open: !!S.srcOpen, label: S.srcOpen ? 'Done' : 'Choose sources', toggle: () => this.setState({ srcOpen: !S.srcOpen }), q: S.srcQ || '', onQ: e => this.setState({ srcQ: e.target.value }),
+      srcPick: { types: this.typeChips(kept), hasTypes: this.typeChips(kept).length > 1, open: !!S.srcOpen, label: S.srcOpen ? 'Done' : 'Choose sources', toggle: () => this.setState({ srcOpen: !S.srcOpen }), q: S.srcQ || '', onQ: e => this.setState({ srcQ: e.target.value }),
         count: (() => { const q = (S.srcQ || '').trim().toLowerCase(); const n = q ? kept.filter(d => d.title.toLowerCase().includes(q)).length : kept.length; return q ? n + ' match' : plural(n, 'source'); })() },
       srcT: kept.filter(d => { const q = (S.srcQ || '').trim().toLowerCase(); return !q || d.title.toLowerCase().includes(q); }).map(d => ({ box: off[d.id] ? 'transparent' : '#8b5cf6', label: d.title.length > 34 ? d.title.slice(0, 33) + '…' : d.title, tip: d.title, onClick: () => toggle(d.id), onOnly: () => only(d.id), bg: off[d.id] ? 'transparent' : 'var(--sel)', bd: off[d.id] ? 'var(--line)' : '#8b5cf6', col: off[d.id] ? 'var(--dim)' : 'var(--ink)', mark: off[d.id] ? '○' : '●' })),
       srcNote: nOn + ' of ' + kept.length + ' sources on', allOn: () => this.setState({ offDocs: {} }), someOff: nOn < kept.length,
