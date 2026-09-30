@@ -1,0 +1,14 @@
+# Nashville Symphony 990s
+
+IRS Form 990 financials for the Nashville Symphony Association (EIN 62-0550979) and the Nashville Symphony Endowment Fund (EIN 62-6222276).
+
+- `data/raw/` original ProPublica API JSON
+- `data/processed/` one CSV per organization
+- `data/summary.md` per-year prose lines (what Holodeck reads)
+- `scripts/` `fetch.py` then `summarize.py` rebuild everything
+
+## Coverage (not 40 years)
+Association: tax years 2011-2023. Endowment Fund: 2011-2017. ProPublica's structured data starts at 2011. Earlier years (mid-1990s on) exist only in the IRS SOI extracts and scanned returns; not yet included. No separate foundation entity was found; the Players Assembly (union) has no financial data.
+
+## Use in Holodeck
+Add panel -> enter `<owner>/nashville-symphony-990s` once pushed to GitHub.
