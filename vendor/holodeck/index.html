@@ -3381,6 +3381,10 @@ class Component extends DCLogic {
     { const pdfStems = new Set(files.filter(x => /\.pdf$/i.test(x.path)).map(x => x.path.replace(/\.pdf$/i, ''))); for (let i = files.length - 1; i >= 0; i--) if (/\.xml$/i.test(files[i].path) && pdfStems.has(files[i].path.replace(/\.xml$/i, ''))) files.splice(i, 1); } // an XML is skipped when the same filing has a PDF
     if (!files.length) { A.error = 'No PDF filings under ' + prefix + ' in ' + owner + '/' + repo + '.'; A.status = ''; this.setState({ busy: '' }); return; }
     hdTraceStart(owner + '/' + repo + ' filings');
+    { // this collection is the filings: drop repo files (CSVs, scripts, JSON) a plain ?repo= visit left behind; filings and unrelated documents stay
+      const cid = this.corpusId(); const mine = d => d.url && d.url.startsWith('https://github.com/' + owner + '/' + repo + '/');
+      if ((this.state.added[cid] || []).some(mine)) { const added = { ...this.state.added, [cid]: this.state.added[cid].filter(d => !mine(d)) }; this.saveAdded(added); this.state.added = added; this.setState({ added }); }
+    }
     const MF = {};
     try { const r = await fetch(raw + enc(prefix + 'manifest.csv'), { cache: 'no-cache' }); if (r.ok) { const L = (await r.text()).trim().split('\n'); const H = L.shift().split(','); L.forEach(l => { const c = l.split(','); const o = {}; H.forEach((h, i) => { o[h.trim()] = (c[i] || '').trim(); }); if (o.file) MF[prefix + o.file] = o; }); } } catch (e) {}
     const docs = []; let n = 0;
@@ -3402,7 +3406,7 @@ class Component extends DCLogic {
           let text = ''; const pages = []; pg.forEach(t => { pages.push(text.length); text += t.replace(/\s+$/, '') + '\n\n'; });
           r.text = text; r.pages = pages; r.ocr = true; r.note = 'The pages shown are the IRS original; the text read from them is OCR of the scan, so a figure can be misread.';
         }
-        docs.push({ ...r, title: ttl || r.title, year: m.tax_year ? +m.tax_year : r.year, type: 'Form ' + (m.form || '990'), url: m.irs_url || ('https://github.com/' + owner + '/' + repo + '/blob/HEAD/' + f.path) });
+        docs.push({ ...r, title: ttl || r.title, year: m.tax_year ? +m.tax_year : r.year, type: 'Form ' + (m.form || '990'), url: m.view_url || m.irs_url || ('https://github.com/' + owner + '/' + repo + '/blob/HEAD/' + f.path) });
       } catch (e) {}
     }
     if (!docs.length) { A.error = 'Nothing readable came back from ' + prefix + '.'; A.status = ''; this.setState({ busy: '' }); return; }
