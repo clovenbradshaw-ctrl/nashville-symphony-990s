@@ -2462,6 +2462,8 @@ function hdEngineMerge(t, ns, eng, hy) {
 // read-only handle for tests: the real functions, so a harness can recompute what a trace claims happened
 setTimeout(() => { try { window.__holodeck = Object.freeze({ analyze, holoKit, paradigms, splitSentences, findNames, isJunk, readAny, hdHygiene, hdPos: w => hdPos(w) }); } catch (e) {} }, 0);
 const hdCut = (t, n) => { t = String(t || '').replace(/\s+/g, ' ').trim(); return t.length > n ? t.slice(0, n - 1) + '…' : t; };
+// LOCAL PATCH: a URL is an address, not content; masking it (same length) stops path pieces becoming names, dates and figures.
+const hdMaskUrls = t => t.replace(/https?:\/\/[^\s<>"')\]]+/g, u => ' '.repeat(u.length));
 function splitSentences(text, tr) {
   const out = []; const re = /[^\n]+?(?:[.!?]+(?=\s|$)|(?=\n)|$)/g; let m;
   const ABBR = /(?:\b(?:a\.m|p\.m|U\.S|U\.K|Mr|Mrs|Ms|Dr|St|Pte|Ltd|Inc|Co|No|vs|Jr|Sr|Gov|Sen|Rep|Mt|Ft|approx|etc|e\.g|i\.e)|\b[A-Z])\.$/;
@@ -2477,7 +2479,7 @@ function splitSentences(text, tr) {
     const gapOK = /^[ \t]*\n[ \t]*$/.test(text.slice(prev ? prev.e : 0, s)) || (skipped && !!prev); skipped = false;
     if (prev && ABBR.test(prev.t) && !/\n/.test(text.slice(prev.e, s))) { tr && tr('sentences', 'join', 'Kept going past “' + hdCut(prev.t.slice(-14), 16) + '”: an abbreviation, not a sentence end', { s: prev.s, e }); prev.e = e; prev.t = text.slice(prev.s, e); continue; }
     // hard-wrapped line (PDF, minutes, transcripts): join when the previous line is unfinished and there's no blank line between
-    if (prev && gapOK && !/[.!?:;"”’)\]]$/.test(prev.t) && (/^[a-z(,;–—-]/.test(tt) || /\b(the|of|to|with|and|or|a|an|for|in|on|by|that|from|at|as|is|are|was|were|be|this|its|their|our)$/i.test(prev.t)) && prev.t.length + tt.length < 900) { tr && tr('sentences', 'join', 'Joined a hard-wrapped line: “' + hdCut(prev.t.slice(-24), 26) + '” continues', { s: prev.s, e }); prev.e = e; prev.t = prev.t + ' ' + tt; continue; }
+    if (prev && gapOK && !/[.!?:;"”’)\]]$/.test(prev.t) && (/^(?:[a-z(,;–—]|-(?=\S))/.test(tt) || /\b(the|of|to|with|and|or|a|an|for|in|on|by|that|from|at|as|is|are|was|were|be|this|its|their|our)$/i.test(prev.t)) && prev.t.length + tt.length < 900) { tr && tr('sentences', 'join', 'Joined a hard-wrapped line: “' + hdCut(prev.t.slice(-24), 26) + '” continues', { s: prev.s, e }); prev.e = e; prev.t = prev.t + ' ' + tt; continue; }
     out.push({ s, e, t: tt });
   }
   return out.filter(x => x.t.length >= 3);
@@ -2682,9 +2684,9 @@ function analyze(corpus, htmlMap) {
     return x; });
   const sts = []; const found = []; const alias = {}; const info = {}; const HY = hdHygiene(docs);
   docs.forEach(d => { const on = hdF(d.id); const ss = splitSentences(d.text, on ? (a, b, c, x) => hdT(a, b, c, { doc: d.id, ...x }) : null); if (on) hdT('sentences', 'split', 'Split into ' + ss.length + ' statements', { doc: d.id, n: ss.length }); const hy = HY ? HY.forDoc(d, on ? (k, what, why) => hdT('names', 'hygiene', why + ' (' + qW(what) + ')', { doc: d.id }) : null) : null; ss.forEach((se, i) => {
-    const ns = hdEngineMerge(se.t, findNames(se.t, hy), d.eng, hy);
+    const mt = hdMaskUrls(se.t); const ns = hdEngineMerge(se.t, findNames(mt, hy), d.eng, hy);
     ns.forEach(n => { if (n.alias) alias[n.alias] = n.name; });
-    const st0 = { id: d.id + ':' + i, doc: d.id, s: se.s, e: se.e, text: se.t, rawNames: ns, figs: findFigures(se.t), dates: findDates(se.t), frame: frameOf(se.t) }; sts.push(st0);
+    const st0 = { id: d.id + ':' + i, doc: d.id, s: se.s, e: se.e, text: se.t, rawNames: ns, figs: findFigures(mt), dates: findDates(mt), frame: frameOf(se.t) }; sts.push(st0);
     if (on) { const D = { doc: d.id, id: st0.id }; hdT('sentences', 'statement', 'Statement ' + (i + 1) + ': \u201c' + hdCut(se.t, 90) + '\u201d', { ...D, s: se.s, e: se.e });
       ns.forEach(n => hdT('names', 'name', 'Name \u201c' + n.name + '\u201d' + (n.title ? ' after the title ' + n.title : '') + (n.alias ? ', short form (' + n.alias + ')' : '') + (n.saidAfter ? ', followed by a reporting verb' : '') + (n.acr ? ', an acronym' : '') + (n.engineAdded ? ', found by the engine (' + n.engine + ')' : n.engine ? ', the engine read it too' : ''), { ...D, name: n.name, s: se.s + n.s, e: se.s + n.e }));
       st0.figs.forEach(g => hdT('figures', 'figure', 'Figure \u201c' + g.raw + '\u201d = ' + g.value.toLocaleString() + ' ' + g.label, { ...D, s: se.s + g.s, e: se.s + g.e }));
@@ -3236,7 +3238,7 @@ class Component extends DCLogic {
     this._onBrUp = () => { if (this._br) this.commitBrush(); }; window.addEventListener('mouseup', this._onBrUp);
     try { if (window.opener && /#ingest/.test(location.hash)) window.opener.postMessage({ type: 'fold-ready' }, '*'); } catch (x) {}
     // LOCAL PATCH (nashville-symphony-990s): ?repo=owner/name pulls that GitHub repo into the workspace on load.
-    try { const m = /[?&]repo=([^/&]+)\/([^&#]+)/.exec(location.search); if (m) setTimeout(() => this.pullRepo(decodeURIComponent(m[1]), decodeURIComponent(m[2])), 1200); } catch (x) {}
+    try { const m = /[?&]repo=([^/&]+)\/([^&#]+)/.exec(location.search); if (m) { const pm = /[?&]path=([^&#]+)/.exec(location.search); setTimeout(() => this.pullRepo(decodeURIComponent(m[1]), decodeURIComponent(m[2]), pm ? { prefix: decodeURIComponent(pm[1]) } : undefined), 1200); } } catch (x) {}
     this._h = {
       enter: e => { this._c++; if (!this.state.dragging) this.setState({ dragging: true }); },
       leave: e => { this._c = Math.max(0, this._c - 1); if (!this._c) this.setState({ dragging: false }); },
@@ -3341,6 +3343,7 @@ class Component extends DCLogic {
       if (!r.ok) throw new Error(r.status === 403 || r.status === 429 ? 'GitHub is limiting requests from this browser — wait a minute and try again.' : r.status === 404 ? 'no such repository, or it is private.' : 'GitHub said ' + r.status + '.');
       tree = (await r.json()).tree || [];
     } catch (e) { return fail('Couldn’t list ' + owner + '/' + repo + ': ' + (e.message || e)); }
+    if (opt.prefix) return this.pullFilings(owner, repo, tree, opt); // LOCAL PATCH: ?path=filings/ loads scanned PDFs + OCR sidecars
     const textRe = /\.(md|markdown|mdown|txt|text|json|jsonl|ndjson|csv|tsv|html?|xml|yaml|yml|org|rst|adoc|log|ini|conf|cfg|toml|py|js|ts|rb|go|rs|java|c|h|cpp|hpp|sh|sql|r|jl|ipynb)$/i;
     const skipDir = /(^|\/)(node_modules|vendor|dist|build|\.git|coverage|target|\.venv|venv|__pycache__|\.next|\.cache|\.ipynb_checkpoints)(\/|$)/i;
     const files = tree.filter(x => x.type === 'blob' && textRe.test(x.path) && !skipDir.test(x.path));
@@ -3365,6 +3368,46 @@ class Component extends DCLogic {
     if (!list.length) return fail('Nothing readable came back from ' + owner + '/' + repo + '.');
     A.status = 'Pulled ' + plural(list.length, 'file') + ' from ' + owner + '/' + repo + '.';
     if (opt.collect) { opt.collect.push(...list); this.setState({ busy: '' }); } else await this.addDocs(list, { keepOpen: opt.keepOpen });
+  }
+  // LOCAL PATCH (nashville-symphony-990s). Load the PDF filings under opt.prefix as sources. A filing is the IRS's own
+  // scan: the PDF is kept so Original shows it as filed, and its OCR sidecar (<name>.ocr.txt, pages split by \f, made by
+  // scripts/ocr_filings.sh) supplies the text that names, figures and dates are read from. manifest.csv (in the prefix)
+  // names each filing: ein,organization,tax_year,form,file,irs_url. A filing with no sidecar still opens, unreadable.
+  async pullFilings(owner, repo, tree, opt) {
+    const A = this.addState(); const say = m => { A.status = m; this.setState({ busy: m }); };
+    const prefix = opt.prefix.replace(/\/?$/, '/'); const enc = p => p.split('/').map(encodeURIComponent).join('/');
+    const raw = 'https://raw.githubusercontent.com/' + owner + '/' + repo + '/HEAD/';
+    const files = tree.filter(x => x.type === 'blob' && x.path.startsWith(prefix) && /\.(pdf|xml)$/i.test(x.path));
+    { const pdfStems = new Set(files.filter(x => /\.pdf$/i.test(x.path)).map(x => x.path.replace(/\.pdf$/i, ''))); for (let i = files.length - 1; i >= 0; i--) if (/\.xml$/i.test(files[i].path) && pdfStems.has(files[i].path.replace(/\.xml$/i, ''))) files.splice(i, 1); } // an XML is skipped when the same filing has a PDF
+    if (!files.length) { A.error = 'No PDF filings under ' + prefix + ' in ' + owner + '/' + repo + '.'; A.status = ''; this.setState({ busy: '' }); return; }
+    hdTraceStart(owner + '/' + repo + ' filings');
+    const MF = {};
+    try { const r = await fetch(raw + enc(prefix + 'manifest.csv'), { cache: 'no-cache' }); if (r.ok) { const L = (await r.text()).trim().split('\n'); const H = L.shift().split(','); L.forEach(l => { const c = l.split(','); const o = {}; H.forEach((h, i) => { o[h.trim()] = (c[i] || '').trim(); }); if (o.file) MF[prefix + o.file] = o; }); } } catch (e) {}
+    const docs = []; let n = 0;
+    for (const f of files) {
+      say('Reading filing ' + (++n) + ' of ' + files.length + '…');
+      try {
+        const m = MF[f.path] || {}; const ttl = m.organization ? m.organization + ' · Form ' + (m.form || '990') + ' · ' + m.tax_year : null;
+        if (/\.xml$/i.test(f.path)) { // an e-filed return with no scan: its XML, read as labelled text (scripts/xml_to_text.py)
+          const t = await (await fetch(raw + enc(f.path.replace(/\.xml$/i, '.readable.txt')), { cache: 'no-cache' })).text();
+          const r = await readAny(new File([t], f.path.split('/').pop().replace(/\.xml$/i, '.txt'), { type: 'text/plain' }));
+          docs.push({ ...r, title: ttl || r.title, year: m.tax_year ? +m.tax_year : r.year, type: 'Form ' + (m.form || '990') + ' (e-file)', url: m.view_url || m.irs_url || ('https://github.com/' + owner + '/' + repo + '/blob/HEAD/' + f.path), note: 'The IRS published no scan of this return, only its data; this is that data as labelled text.' });
+          continue;
+        }
+        const buf = await (await fetch(raw + enc(f.path))).arrayBuffer();
+        const r = await readAny(new File([buf], f.path.split('/').pop(), { type: 'application/pdf' }));
+        let ocr = ''; try { const o = await fetch(raw + enc(f.path.replace(/\.pdf$/i, '.ocr.txt')), { cache: 'no-cache' }); if (o.ok) ocr = await o.text(); } catch (e) {}
+        if (ocr.trim() && !(r.text || '').trim()) {
+          const pg = ocr.split('\f'); while (pg.length && !pg[pg.length - 1].trim()) pg.pop();
+          let text = ''; const pages = []; pg.forEach(t => { pages.push(text.length); text += t.replace(/\s+$/, '') + '\n\n'; });
+          r.text = text; r.pages = pages; r.ocr = true; r.note = 'The pages shown are the IRS original; the text read from them is OCR of the scan, so a figure can be misread.';
+        }
+        docs.push({ ...r, title: ttl || r.title, year: m.tax_year ? +m.tax_year : r.year, type: 'Form ' + (m.form || '990'), url: m.irs_url || ('https://github.com/' + owner + '/' + repo + '/blob/HEAD/' + f.path) });
+      } catch (e) {}
+    }
+    if (!docs.length) { A.error = 'Nothing readable came back from ' + prefix + '.'; A.status = ''; this.setState({ busy: '' }); return; }
+    A.status = 'Loaded ' + plural(docs.length, 'filing') + ' from ' + owner + '/' + repo + '.';
+    await this.addDocs(docs, { keepOpen: opt.keepOpen });
   }
   // ── An address that resolves to a YouTube video: its title, description and caption transcript, read by the
   // Worker (a static page cannot read them). With captions it becomes the same timed transcript document local

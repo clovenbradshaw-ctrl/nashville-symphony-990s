@@ -1,0 +1,1311 @@
+Return Header > Return Ts: 2022-06-13T14:00:21-05:00
+Return Header > Tax Period End date: 2021-07-31
+Return Header > Preparer Firm Grp > Preparer Firm EIN: 350921680
+Return Header > Preparer Firm Grp > Preparer Firm Name > Business Name Line1: CROWE LLP
+Return Header > Preparer Firm Grp > Preparer US Address > Address Line1: 750 N St Paul Suite 850
+Return Header > Preparer Firm Grp > Preparer US Address > City Nm: Dallas
+Return Header > Preparer Firm Grp > Preparer US Address > State Abbreviation Cd: TX
+Return Header > Preparer Firm Grp > Preparer US Address > ZIP Cd: 752013246
+Return Header > Return Type Cd: 990
+Return Header > Tax Period Begin date: 2020-08-01
+Return Header > Filer > EIN: 620550979
+Return Header > Filer > Business Name > Business Name Line1: Nashville Symphony Association
+Return Header > Filer > Business Name Control: NASH
+Return Header > Filer > Phone Num: 6156876515
+Return Header > Filer > US Address > Address Line1: 1 Symphony Place
+Return Header > Filer > US Address > City Nm: Nashville
+Return Header > Filer > US Address > State Abbreviation Cd: TN
+Return Header > Filer > US Address > ZIP Cd: 37201
+Return Header > Business Officer Grp > Person Nm: Alan Valentine
+Return Header > Business Officer Grp > Person Title: President & CEO
+Return Header > Business Officer Grp > Signature date: 2022-06-13
+Return Header > Business Officer Grp > Discuss With Paid Preparer: true
+Return Header > Signing Officer Grp > Person Full Name > Person First Nm: Alan
+Return Header > Signing Officer Grp > Person Full Name > Person Last Nm: Valentine
+Return Header > Signing Officer Grp > SSN: 999009999
+Return Header > Preparer Person Grp > Preparer Person Nm: Amy Bellanca
+Return Header > Preparer Person Grp > PTIN: P01572961
+Return Header > Preparer Person Grp > Phone Num: 2147775200
+Return Header > Tax Yr: 2020
+Return Header > Build TS: 2022-09-23 18:48:47Z
+IRS990 > Doing Business As Name > Business Name Line1: The Nashville Symphony
+IRS990 > Principal Ofcr Business Name > Business Name Line1: Alan Valentine
+IRS990 > US Address > Address Line1: 1 Symphony Place
+IRS990 > US Address > City Nm: Nashville
+IRS990 > US Address > State Abbreviation Cd: TN
+IRS990 > US Address > ZIP Cd: 37201
+IRS990 > Gross Receipts: $15,482,674
+IRS990 > Group Return For Affiliates: false
+IRS990 > Organization501c3: X
+IRS990 > Website Address: nashvillesymphony.org
+IRS990 > Type Of Organization Corp: X
+IRS990 > Formation Yr: 1946
+IRS990 > Legal Domicile State Cd: TN
+IRS990 > Activity Or Mission Desc: The Nashville Symphony inspires, entertains, educates and serves through musical performance, innovation, collaboration, and inclusion.
+IRS990 > Voting Members Governing Body count: 53
+IRS990 > Voting Membersependent count: 45
+IRS990 > Total Employee count: 379
+IRS990 > Total Volunteers count: 250
+IRS990 > Total Gross UBI: -$1,085,045
+IRS990 > Net Unrelated Bus Txbl Incm: $0
+IRS990 > PY Contributions Grants: $9,367,661
+IRS990 > CY Contributions Grants: $10,262,146
+IRS990 > PY Program Service Revenue: $6,214,666
+IRS990 > CY Program Service Revenue: $15,000
+IRS990 > PY Investment Income: $104,848
+IRS990 > CY Investment Income: $653,959
+IRS990 > PY Other Revenue: $259,847
+IRS990 > CY Other Revenue: $1,435,573
+IRS990 > PY Total Revenue: $15,947,022
+IRS990 > CY Total Revenue: $12,366,678
+IRS990 > PY Grants And Similar Paid: $4,000
+IRS990 > CY Grants And Similar Paid: $0
+IRS990 > CY Benefits Paid To Members: $0
+IRS990 > PY Salaries Comp Emp Bnft Paid: $14,373,795
+IRS990 > CY Salaries Comp Emp Bnft Paid: $5,284,235
+IRS990 > PY Total Prof Fndrsng Expns: $229,511
+IRS990 > CY Total Prof Fndrsng Expns: $210,164
+IRS990 > CY Total Fundraising Expense: $850,251
+IRS990 > PY Other Expenses: $9,003,600
+IRS990 > CY Other Expenses: $4,846,719
+IRS990 > PY Total Expenses: $23,610,906
+IRS990 > CY Total Expenses: $10,341,118
+IRS990 > PY Revenues Less Expenses: -$7,663,884
+IRS990 > CY Revenues Less Expenses: $2,025,560
+IRS990 > Total Assets BOY: $92,523,857
+IRS990 > Total Assets EOY: $100,031,908
+IRS990 > Total Liabilities BOY: $29,345,428
+IRS990 > Total Liabilities EOY: $32,935,024
+IRS990 > Net Assets Or Fund Balances BOY: $63,178,429
+IRS990 > Net Assets Or Fund Balances EOY: $67,096,884
+IRS990 > Mission Desc: The Nashville Symphony inspires, entertains, educates and serves through musical performance, innovation, collaboration, and inclusion. Vision: As Middle Tennessee continues to grow and transform, the Nashville Symphony will be a financially robust, world-class orchestra fully supported and embraced by the community it serves. Key to achieving this vision, the Nashville Symphony will: * Become the leading orchestra for the performance, recording and commissioning of contemporary American Music. * Transform into an equitable and inclusive institution that is representative of the diverse community it serves. * Deliver visionary artistic and educational programming that excites the public, drives institutional growth and contributes to the growth of the art form.
+IRS990 > Significant New Program Srvc: false
+IRS990 > Significant Change: false
+IRS990 > Expense: $6,631,009
+IRS990 > Grant: $0
+IRS990 > Revenue: $30,541
+IRS990 > Desc: Artistic Programming : Like countless performing arts organizations, the Nashville Symphony was dramatically impacted by the pandemic, which forced the cancelation or postponement of more than 65 concerts from March 2020 through July 2021, along with the furlough of 79 musicians and 49 staff members. While COVID-19 caused tremendous disruption to operations, it also provided the organization with an opportunity to reassess its priorities and begin realigning its vision with the needs of the community. Strategic efforts at all levels of the organization have ensured that the Nashville Symphony is here to help the community heal, to serve future generations, and to preserve the artistic legacy of our 75-year old institution, even after one of the most difficult years in its history. Even though the orchestra was unable to perform for almost the entirety of the 2020/21 concert season, the Nashville Symphony sought opportunities to continue reaching audiences, initially through virtual content. In January 2021, Nashville Symphony's virtual Let Freedom Sing! project celebrated the life and legacy of Dr. Martin Luther King, Jr. through online video performances of music by Black composers and musicians, and discussions with members of the Black community. Throughout the project, the Symphony showcased content from 14 local Black artists, ensembles, and community leaders. Nashville Symphony also provided additional curriculum and materials, available online for free alongside the published videos. Between May 21 and June 26, Nashville Symphony musicians welcomed the community back to the Schermerhorn Symphony Center with six Summer Chamber Music Series concerts, all free and open to the public. The series showcased small ensembles of Nashville Symphony musicians performing classical works including Florence Price's String Quartet No. 2 in A minor, Caroline Shaw's Dolce Cantavi, and chamber works by Bach, Dvoak, Mozart, and more. On July 4, 2021, the full Nashville Symphony performed for the first time since March 2020, as part of Nashville's annual Independence Day celebration. Giancarlo Guerrero and a roster of 63 musicians performed for an estimated 350,000 people, with fireworks choreographed to the program. Amid a year of unprecedented challenges, Nashville Symphony ratified a new three year-contract with the Nashville Musicians Association-AFM Local 257 that went into effect Aug. 1, 2021. This collective bargaining agreement brought our furloughed musicians back to work full-time, ending a temporary agreement during which they received $500 weekly stipends and full health insurance.
+IRS990 > Prog Srvc Accom Acty2 Grp > Expense: $576,609
+IRS990 > Prog Srvc Accom Acty2 Grp > Grant: $0
+IRS990 > Prog Srvc Accom Acty2 Grp > Revenue: $0
+IRS990 > Prog Srvc Accom Acty2 Grp > Desc: Education & Community Engagement Programs: The Nashville Symphony serves thousands of children and families each year from the 41-county Middle Tennessee region, at Schermerhorn Symphony Center, on virtual platforms, and in local schools and community gathering spaces across the region. Despite the tremendous disruption caused by the COVID-19 pandemic, the Nashville Symphony kept education and community programming at the center of its planning and programming during the 2020/21 season, utilizing a variety of virtual educational activities to inspire, entertain, educate, and serve Middle Tennessee audiences, while also realigning our vision with the needs of the community. Programming highlights include the following: Accelerando is designed to prepare gifted young students of diverse ethnic backgrounds to pursue music at the collegiate level and establish careers as musicians in professional orchestras. During the pandemic, 24 students continued to receive weekly instruction, regular music theory and history classes, valuable performance opportunities, mentorship and guidance from professional musicians with diverse backgrounds, and support with auditions, summer festivals, and college/ conservatory applications. During the 2020/21 season, Accelerando students learned how to record themselves, edit audio and video, present themselves professionally on camera, and share their content through social media and other online platforms. On June 7 and 9, students, family, and the community returned to Schermerhorn Symphony Center to enjoy performances from all 24 Accelerando students in year-end recitals. Students were given the opportunity to attend the Building Bridges Symposium, a forum to discuss the operations and strategies of programs like Accelerando that create diverse, equitable, and inclusive education opportunities for young musicians pursuing a career in classical music. Each year, Accelerando seniors participate in the intensive college/conservatory audition process and must make decisions about where they will continue pursuing their musical dreams and ambitions. We are proud of our two graduates this year: Violist Treasure Eckles is now attending the Jacobs School of Music at Indiana University, and bassoonist Xavion Patterson is attending the Colburn School in Los Angeles. They were awarded a combined $334,000 in scholarship funding. The Nashville Symphony also provided resources, instruction, and performance coaching for small groups of students and community members around Middle Tennessee. 958 students and adults were engaged over 51 sessions, with participation from Antioch High School, Martin Luther King, Jr. Magnet School, Nashville Philharmonic Orchestra, and more. Is It a Fiddle or a Violin?, offered in collaboration with the Country Music Hall of Fame, invited 366 students to explore the commonalities and the differences between country and classical music. This summer, Nashville Symphony conducted a Community Needs Assessment with the help of Paula Wilson, an intern from Americans for the Arts' Diversity in Arts Leadership program administered by Metro Arts. Through robust discussions aimed at addressing institutional goals across every department, the Symphony interviewed 42 community members in one-on-one and group settings, including patrons, fellow arts and community organizations, and independent artists. The feedback generated through this project will help the Nashville Symphony in its ongoing efforts to increase audience diversity, remove barriers to access, and improve the patron experience.
+IRS990 > Total Program Service Expenses: $7,207,618
+IRS990 > Described In Section501c3: true
+IRS990 > Schedule B Required: true
+IRS990 > Political Campaign Acty: false
+IRS990 > Lobbying Activities: false
+IRS990 > Donor Advised Fund: false
+IRS990 > Conservation Easements: false
+IRS990 > Collections Of Art: false
+IRS990 > Credit Counseling: false
+IRS990 > Donor Rstr Or Quasi Endowments: true
+IRS990 > Report Land Building Equipment: true
+IRS990 > Report Investments Other Sec: false
+IRS990 > Report Program Related Invst: false
+IRS990 > Report Other Assets: false
+IRS990 > Report Other Liabilities: false
+IRS990 > Include FIN48 Footnote: true
+IRS990 > Independent Audit Fincl Stmt: true
+IRS990 > Consolidated Audit Fincl Stmt: false
+IRS990 > School Operating: false
+IRS990 > Foreign Office: false
+IRS990 > Foreign Activities: false
+IRS990 > More Than5000 K To Org: false
+IRS990 > More Than5000 K Toividuals: false
+IRS990 > Professional Fundraising: true
+IRS990 > Fundraising Activities: true
+IRS990 > Gaming Activities: false
+IRS990 > Operate Hospital: false
+IRS990 > Grants To Organizations: false
+IRS990 > Grants Toividuals: false
+IRS990 > Schedule J Required: true
+IRS990 > Tax Exempt Bonds: false
+IRS990 > Engaged In Excess Benefit Trans: false
+IRS990 > PY Excess Benefit Trans: false
+IRS990 > Loan Outstanding: true
+IRS990 > Grant To Related Person: false
+IRS990 > Business Rln With Org Mem: false
+IRS990 > Business Rln With Fam Mem: false
+IRS990 > Business Rln With35 Ctrl Ent: false
+IRS990 > Deductible Non Cash Contri: false
+IRS990 > Deductible Art Contribution: false
+IRS990 > Terminate Operations: false
+IRS990 > Partial Liquidation: false
+IRS990 > Disregarded Entity: false
+IRS990 > Related Entity: true
+IRS990 > Related Organization Ctrl Ent: true
+IRS990 > Transaction With Control Ent: true
+IRS990 > Trnsfr Exmpt Non Chrtbl Rltd Org: false
+IRS990 > Activities Conducted Prtshp: false
+IRS990 > Schedule O Required: true
+IRS990 > IRP Document count: 100
+IRS990 > IRP Document W2 G count: 0
+IRS990 > Backup Wthld Compliance: true
+IRS990 > Employee count: 379
+IRS990 > Employment Tax Returns Filed: true
+IRS990 > Unrelated Bus Incm Over Limit: true
+IRS990 > Form990 T Filed: true
+IRS990 > Foreign Financial Account: false
+IRS990 > Prohibited Tax Shelter Trans: false
+IRS990 > Taxable Party Notification: false
+IRS990 > Nondeductible Contributions: false
+IRS990 > Quid Pro Quo Contributions: true
+IRS990 > Quid Pro Quo Contri Discl: true
+IRS990 > Form8282 Property Disposed Of: false
+IRS990 > Rcv Fnds To Pay Prsnl Bnft countrct: false
+IRS990 > Pay Premiums Prsnl Bnft countrct: false
+IRS990 > Indoor Tanning Services: false
+IRS990 > Subj To Tax Rmnrtn Ex Prcht Pymt: false
+IRS990 > Subject To Excs Tax Net Invst Inc: false
+IRS990 > Info In Schedule O Part VI: X
+IRS990 > Governing Body Voting Members count: 53
+IRS990 > Independent Voting Member count: 45
+IRS990 > Family Or Business Rln: true
+IRS990 > Delegation Of Mgmt Duties: false
+IRS990 > Change To Org Documents: false
+IRS990 > Material Diversion Or Misuse: false
+IRS990 > Members Or Stockholders: false
+IRS990 > Election Of Board Members: false
+IRS990 > Decisions Subject To Approva: false
+IRS990 > Minutes Of Governing Body: true
+IRS990 > Minutes Of Committees: true
+IRS990 > Officer Mailing Address: false
+IRS990 > Local Chapters: false
+IRS990 > Form990 Provided To Gvrn Body: false
+IRS990 > Conflict Of Interest Policy: true
+IRS990 > Annual Disclosure Covered Prsn: true
+IRS990 > Regular Monitoring Enfrc: true
+IRS990 > Whistleblower Policy: true
+IRS990 > Document Retention Policy: true
+IRS990 > Compensation Process CEO: true
+IRS990 > Compensation Process Other: true
+IRS990 > Investment In Joint Venture: false
+IRS990 > States Where Copy Of Return Is Fld Cd: TN
+IRS990 > Upon Request: X
+IRS990 > Other: X
+IRS990 > Books In Care Of Detail > Business Name > Business Name Line1: Karen Warren
+IRS990 > Books In Care Of Detail > Phone Num: 6156876516
+IRS990 > Books In Care Of Detail > US Address > Address Line1: 1 Symphony Place
+IRS990 > Books In Care Of Detail > US Address > City Nm: Nashville
+IRS990 > Books In Care Of Detail > US Address > State Abbreviation Cd: TN
+IRS990 > Books In Care Of Detail > US Address > ZIP Cd: 37201
+IRS990 > Form990 Part VII Section A Grp > Business Name > Business Name Line1: ALAN D VALENTINE
+IRS990 > Form990 Part VII Section A Grp > Title: PRESIDENT & CEO
+IRS990 > Form990 Part VII Section A Grp > Average Hours Per Week Rt: 40.0
+IRS990 > Form990 Part VII Section A Grp > Average Hours Per Week Rltd Org Rt: 0.0
+IRS990 > Form990 Part VII Section A Grp > Individual Trustee Or Director: X
+IRS990 > Form990 Part VII Section A Grp > Officer: X
+IRS990 > Form990 Part VII Section A Grp > Reportable Comp From Org: $307,240
+IRS990 > Form990 Part VII Section A Grp > Reportable Comp From Rltd Org: $0
+IRS990 > Form990 Part VII Section A Grp > Other Compensation: $15,907
+IRS990 > Form990 Part VII Section A Grp > Business Name > Business Name Line1: DR MARK D PEACOCK
+IRS990 > Form990 Part VII Section A Grp > Title: DIRECTOR
+IRS990 > Form990 Part VII Section A Grp > Average Hours Per Week Rt: 1.0
+IRS990 > Form990 Part VII Section A Grp > Average Hours Per Week Rltd Org Rt: 0.0
+IRS990 > Form990 Part VII Section A Grp > Individual Trustee Or Director: X
+IRS990 > Form990 Part VII Section A Grp > Officer: X
+IRS990 > Form990 Part VII Section A Grp > Reportable Comp From Org: $0
+IRS990 > Form990 Part VII Section A Grp > Reportable Comp From Rltd Org: $0
+IRS990 > Form990 Part VII Section A Grp > Other Compensation: $0
+IRS990 > Form990 Part VII Section A Grp > Business Name > Business Name Line1: DR PAMELA L CARTER
+IRS990 > Form990 Part VII Section A Grp > Title: BOARD CHAIR
+IRS990 > Form990 Part VII Section A Grp > Average Hours Per Week Rt: 1.0
+IRS990 > Form990 Part VII Section A Grp > Average Hours Per Week Rltd Org Rt: 0.0
+IRS990 > Form990 Part VII Section A Grp > Individual Trustee Or Director: X
+IRS990 > Form990 Part VII Section A Grp > Officer: X
+IRS990 > Form990 Part VII Section A Grp > Reportable Comp From Org: $0
+IRS990 > Form990 Part VII Section A Grp > Reportable Comp From Rltd Org: $0
+IRS990 > Form990 Part VII Section A Grp > Other Compensation: $0
+IRS990 > Form990 Part VII Section A Grp > Business Name > Business Name Line1: ORRIN HENRY INGRAM
+IRS990 > Form990 Part VII Section A Grp > Title: SECRETARY
+IRS990 > Form990 Part VII Section A Grp > Average Hours Per Week Rt: 1.0
+IRS990 > Form990 Part VII Section A Grp > Average Hours Per Week Rltd Org Rt: 0.0
+IRS990 > Form990 Part VII Section A Grp > Individual Trustee Or Director: X
+IRS990 > Form990 Part VII Section A Grp > Officer: X
+IRS990 > Form990 Part VII Section A Grp > Reportable Comp From Org: $0
+IRS990 > Form990 Part VII Section A Grp > Reportable Comp From Rltd Org: $0
+IRS990 > Form990 Part VII Section A Grp > Other Compensation: $0
+IRS990 > Form990 Part VII Section A Grp > Business Name > Business Name Line1: REV DEXTER S BREWER
+IRS990 > Form990 Part VII Section A Grp > Title: BOARD VICE-CHAIR
+IRS990 > Form990 Part VII Section A Grp > Average Hours Per Week Rt: 1.0
+IRS990 > Form990 Part VII Section A Grp > Average Hours Per Week Rltd Org Rt: 0.0
+IRS990 > Form990 Part VII Section A Grp > Individual Trustee Or Director: X
+IRS990 > Form990 Part VII Section A Grp > Officer: X
+IRS990 > Form990 Part VII Section A Grp > Reportable Comp From Org: $0
+IRS990 > Form990 Part VII Section A Grp > Reportable Comp From Rltd Org: $0
+IRS990 > Form990 Part VII Section A Grp > Other Compensation: $0
+IRS990 > Form990 Part VII Section A Grp > Business Name > Business Name Line1: ROBERT Duncan OLSEN
+IRS990 > Form990 Part VII Section A Grp > Title: Treasurer
+IRS990 > Form990 Part VII Section A Grp > Average Hours Per Week Rt: 1.0
+IRS990 > Form990 Part VII Section A Grp > Average Hours Per Week Rltd Org Rt: 0.0
+IRS990 > Form990 Part VII Section A Grp > Individual Trustee Or Director: X
+IRS990 > Form990 Part VII Section A Grp > Officer: X
+IRS990 > Form990 Part VII Section A Grp > Reportable Comp From Org: $0
+IRS990 > Form990 Part VII Section A Grp > Reportable Comp From Rltd Org: $0
+IRS990 > Form990 Part VII Section A Grp > Other Compensation: $0
+IRS990 > Form990 Part VII Section A Grp > Business Name > Business Name Line1: Amanda Kathleen Kane
+IRS990 > Form990 Part VII Section A Grp > Title: Director/Associate Board President
+IRS990 > Form990 Part VII Section A Grp > Average Hours Per Week Rt: 1.0
+IRS990 > Form990 Part VII Section A Grp > Average Hours Per Week Rltd Org Rt: 0.0
+IRS990 > Form990 Part VII Section A Grp > Individual Trustee Or Director: X
+IRS990 > Form990 Part VII Section A Grp > Reportable Comp From Org: $0
+IRS990 > Form990 Part VII Section A Grp > Reportable Comp From Rltd Org: $0
+IRS990 > Form990 Part VII Section A Grp > Other Compensation: $0
+IRS990 > Form990 Part VII Section A Grp > Business Name > Business Name Line1: ANDREW GIACOBONE
+IRS990 > Form990 Part VII Section A Grp > Title: DIRECTOR
+IRS990 > Form990 Part VII Section A Grp > Average Hours Per Week Rt: 1.0
+IRS990 > Form990 Part VII Section A Grp > Average Hours Per Week Rltd Org Rt: 0.0
+IRS990 > Form990 Part VII Section A Grp > Individual Trustee Or Director: X
+IRS990 > Form990 Part VII Section A Grp > Reportable Comp From Org: $0
+IRS990 > Form990 Part VII Section A Grp > Reportable Comp From Rltd Org: $0
+IRS990 > Form990 Part VII Section A Grp > Other Compensation: $0
+IRS990 > Form990 Part VII Section A Grp > Business Name > Business Name Line1: ANDY MILLER
+IRS990 > Form990 Part VII Section A Grp > Title: DIRECTOR/ Chorus President
+IRS990 > Form990 Part VII Section A Grp > Average Hours Per Week Rt: 1.0
+IRS990 > Form990 Part VII Section A Grp > Average Hours Per Week Rltd Org Rt: 0.0
+IRS990 > Form990 Part VII Section A Grp > Individual Trustee Or Director: X
+IRS990 > Form990 Part VII Section A Grp > Reportable Comp From Org: $0
+IRS990 > Form990 Part VII Section A Grp > Reportable Comp From Rltd Org: $0
+IRS990 > Form990 Part VII Section A Grp > Other Compensation: $0
+IRS990 > Form990 Part VII Section A Grp > Business Name > Business Name Line1: Anthony Giarratana
+IRS990 > Form990 Part VII Section A Grp > Title: Director
+IRS990 > Form990 Part VII Section A Grp > Average Hours Per Week Rt: 1.0
+IRS990 > Form990 Part VII Section A Grp > Average Hours Per Week Rltd Org Rt: 0.0
+IRS990 > Form990 Part VII Section A Grp > Individual Trustee Or Director: X
+IRS990 > Form990 Part VII Section A Grp > Reportable Comp From Org: $0
+IRS990 > Form990 Part VII Section A Grp > Reportable Comp From Rltd Org: $0
+IRS990 > Form990 Part VII Section A Grp > Other Compensation: $0
+IRS990 > Form990 Part VII Section A Grp > Business Name > Business Name Line1: Austin Thomas Hatley
+IRS990 > Form990 Part VII Section A Grp > Title: Director
+IRS990 > Form990 Part VII Section A Grp > Average Hours Per Week Rt: 1.0
+IRS990 > Form990 Part VII Section A Grp > Average Hours Per Week Rltd Org Rt: 0.0
+IRS990 > Form990 Part VII Section A Grp > Individual Trustee Or Director: X
+IRS990 > Form990 Part VII Section A Grp > Reportable Comp From Org: $0
+IRS990 > Form990 Part VII Section A Grp > Reportable Comp From Rltd Org: $0
+IRS990 > Form990 Part VII Section A Grp > Other Compensation: $0
+IRS990 > Form990 Part VII Section A Grp > Business Name > Business Name Line1: BETSY WILLS
+IRS990 > Form990 Part VII Section A Grp > Title: DIRECTOR
+IRS990 > Form990 Part VII Section A Grp > Average Hours Per Week Rt: 1.0
+IRS990 > Form990 Part VII Section A Grp > Average Hours Per Week Rltd Org Rt: 0.0
+IRS990 > Form990 Part VII Section A Grp > Individual Trustee Or Director: X
+IRS990 > Form990 Part VII Section A Grp > Reportable Comp From Org: $0
+IRS990 > Form990 Part VII Section A Grp > Reportable Comp From Rltd Org: $0
+IRS990 > Form990 Part VII Section A Grp > Other Compensation: $0
+IRS990 > Form990 Part VII Section A Grp > Business Name > Business Name Line1: BRENDA P GRIFFIN
+IRS990 > Form990 Part VII Section A Grp > Title: DIRECTOR
+IRS990 > Form990 Part VII Section A Grp > Average Hours Per Week Rt: 1.0
+IRS990 > Form990 Part VII Section A Grp > Average Hours Per Week Rltd Org Rt: 0.0
+IRS990 > Form990 Part VII Section A Grp > Individual Trustee Or Director: X
+IRS990 > Form990 Part VII Section A Grp > Reportable Comp From Org: $0
+IRS990 > Form990 Part VII Section A Grp > Reportable Comp From Rltd Org: $0
+IRS990 > Form990 Part VII Section A Grp > Other Compensation: $0
+IRS990 > Form990 Part VII Section A Grp > Business Name > Business Name Line1: CAROL DANIELS
+IRS990 > Form990 Part VII Section A Grp > Title: DIRECTOR
+IRS990 > Form990 Part VII Section A Grp > Average Hours Per Week Rt: 1.0
+IRS990 > Form990 Part VII Section A Grp > Average Hours Per Week Rltd Org Rt: 0.0
+IRS990 > Form990 Part VII Section A Grp > Individual Trustee Or Director: X
+IRS990 > Form990 Part VII Section A Grp > Reportable Comp From Org: $0
+IRS990 > Form990 Part VII Section A Grp > Reportable Comp From Rltd Org: $0
+IRS990 > Form990 Part VII Section A Grp > Other Compensation: $0
+IRS990 > Form990 Part VII Section A Grp > Business Name > Business Name Line1: CAROLYN W SCHOTT
+IRS990 > Form990 Part VII Section A Grp > Title: DIRECTOR
+IRS990 > Form990 Part VII Section A Grp > Average Hours Per Week Rt: 1.0
+IRS990 > Form990 Part VII Section A Grp > Average Hours Per Week Rltd Org Rt: 0.0
+IRS990 > Form990 Part VII Section A Grp > Individual Trustee Or Director: X
+IRS990 > Form990 Part VII Section A Grp > Reportable Comp From Org: $0
+IRS990 > Form990 Part VII Section A Grp > Reportable Comp From Rltd Org: $0
+IRS990 > Form990 Part VII Section A Grp > Other Compensation: $0
+IRS990 > Form990 Part VII Section A Grp > Business Name > Business Name Line1: CHRISTOPHER FARRELL
+IRS990 > Form990 Part VII Section A Grp > Title: DIRECTOR (see SCHEDULE O)
+IRS990 > Form990 Part VII Section A Grp > Average Hours Per Week Rt: 40.0
+IRS990 > Form990 Part VII Section A Grp > Average Hours Per Week Rltd Org Rt: 0.0
+IRS990 > Form990 Part VII Section A Grp > Individual Trustee Or Director: X
+IRS990 > Form990 Part VII Section A Grp > Reportable Comp From Org: $41,351
+IRS990 > Form990 Part VII Section A Grp > Reportable Comp From Rltd Org: $0
+IRS990 > Form990 Part VII Section A Grp > Other Compensation: $6,757
+IRS990 > Form990 Part VII Section A Grp > Business Name > Business Name Line1: CLARE YANG
+IRS990 > Form990 Part VII Section A Grp > Title: DIRECTOR (see Schedule O)
+IRS990 > Form990 Part VII Section A Grp > Average Hours Per Week Rt: 40.0
+IRS990 > Form990 Part VII Section A Grp > Average Hours Per Week Rltd Org Rt: 0.0
+IRS990 > Form990 Part VII Section A Grp > Individual Trustee Or Director: X
+IRS990 > Form990 Part VII Section A Grp > Reportable Comp From Org: $38,845
+IRS990 > Form990 Part VII Section A Grp > Reportable Comp From Rltd Org: $0
+IRS990 > Form990 Part VII Section A Grp > Other Compensation: $6,603
+IRS990 > Form990 Part VII Section A Grp > Business Name > Business Name Line1: CYNTHIA CLARK MATTHEWS
+IRS990 > Form990 Part VII Section A Grp > Title: DIRECTOR
+IRS990 > Form990 Part VII Section A Grp > Average Hours Per Week Rt: 1.0
+IRS990 > Form990 Part VII Section A Grp > Average Hours Per Week Rltd Org Rt: 0.0
+IRS990 > Form990 Part VII Section A Grp > Individual Trustee Or Director: X
+IRS990 > Form990 Part VII Section A Grp > Reportable Comp From Org: $0
+IRS990 > Form990 Part VII Section A Grp > Reportable Comp From Rltd Org: $0
+IRS990 > Form990 Part VII Section A Grp > Other Compensation: $0
+IRS990 > Form990 Part VII Section A Grp > Business Name > Business Name Line1: DEREK HAWKES
+IRS990 > Form990 Part VII Section A Grp > Title: DIRECTOR (see Schedule O)
+IRS990 > Form990 Part VII Section A Grp > Average Hours Per Week Rt: 40.0
+IRS990 > Form990 Part VII Section A Grp > Average Hours Per Week Rltd Org Rt: 0.0
+IRS990 > Form990 Part VII Section A Grp > Individual Trustee Or Director: X
+IRS990 > Form990 Part VII Section A Grp > Reportable Comp From Org: $45,057
+IRS990 > Form990 Part VII Section A Grp > Reportable Comp From Rltd Org: $0
+IRS990 > Form990 Part VII Section A Grp > Other Compensation: $7,776
+IRS990 > Form990 Part VII Section A Grp > Business Name > Business Name Line1: DR E KELLEY SANFORD
+IRS990 > Form990 Part VII Section A Grp > Title: DIRECTOR
+IRS990 > Form990 Part VII Section A Grp > Average Hours Per Week Rt: 1.0
+IRS990 > Form990 Part VII Section A Grp > Average Hours Per Week Rltd Org Rt: 0.0
+IRS990 > Form990 Part VII Section A Grp > Individual Trustee Or Director: X
+IRS990 > Form990 Part VII Section A Grp > Reportable Comp From Org: $0
+IRS990 > Form990 Part VII Section A Grp > Reportable Comp From Rltd Org: $0
+IRS990 > Form990 Part VII Section A Grp > Other Compensation: $0
+IRS990 > Form990 Part VII Section A Grp > Business Name > Business Name Line1: DR JANICE RILEY-BURT
+IRS990 > Form990 Part VII Section A Grp > Title: DIRECTOR
+IRS990 > Form990 Part VII Section A Grp > Average Hours Per Week Rt: 1.0
+IRS990 > Form990 Part VII Section A Grp > Average Hours Per Week Rltd Org Rt: 0.0
+IRS990 > Form990 Part VII Section A Grp > Individual Trustee Or Director: X
+IRS990 > Form990 Part VII Section A Grp > Reportable Comp From Org: $0
+IRS990 > Form990 Part VII Section A Grp > Reportable Comp From Rltd Org: $0
+IRS990 > Form990 Part VII Section A Grp > Other Compensation: $0
+IRS990 > Form990 Part VII Section A Grp > Business Name > Business Name Line1: EDMUND JACKSON PHD
+IRS990 > Form990 Part VII Section A Grp > Title: DIRECTOR
+IRS990 > Form990 Part VII Section A Grp > Average Hours Per Week Rt: 1.0
+IRS990 > Form990 Part VII Section A Grp > Average Hours Per Week Rltd Org Rt: 0.0
+IRS990 > Form990 Part VII Section A Grp > Individual Trustee Or Director: X
+IRS990 > Form990 Part VII Section A Grp > Reportable Comp From Org: $0
+IRS990 > Form990 Part VII Section A Grp > Reportable Comp From Rltd Org: $0
+IRS990 > Form990 Part VII Section A Grp > Other Compensation: $0
+IRS990 > Form990 Part VII Section A Grp > Business Name > Business Name Line1: EDWARD A GOODRICH
+IRS990 > Form990 Part VII Section A Grp > Title: DIRECTOR
+IRS990 > Form990 Part VII Section A Grp > Average Hours Per Week Rt: 1.0
+IRS990 > Form990 Part VII Section A Grp > Average Hours Per Week Rltd Org Rt: 0.0
+IRS990 > Form990 Part VII Section A Grp > Individual Trustee Or Director: X
+IRS990 > Form990 Part VII Section A Grp > Reportable Comp From Org: $0
+IRS990 > Form990 Part VII Section A Grp > Reportable Comp From Rltd Org: $0
+IRS990 > Form990 Part VII Section A Grp > Other Compensation: $0
+IRS990 > Form990 Part VII Section A Grp > Business Name > Business Name Line1: EMILY HUMPHREYS
+IRS990 > Form990 Part VII Section A Grp > Title: DIRECTOR
+IRS990 > Form990 Part VII Section A Grp > Average Hours Per Week Rt: 1.0
+IRS990 > Form990 Part VII Section A Grp > Average Hours Per Week Rltd Org Rt: 0.0
+IRS990 > Form990 Part VII Section A Grp > Individual Trustee Or Director: X
+IRS990 > Form990 Part VII Section A Grp > Reportable Comp From Org: $0
+IRS990 > Form990 Part VII Section A Grp > Reportable Comp From Rltd Org: $0
+IRS990 > Form990 Part VII Section A Grp > Other Compensation: $0
+IRS990 > Form990 Part VII Section A Grp > Business Name > Business Name Line1: Gail Carr Williams
+IRS990 > Form990 Part VII Section A Grp > Title: Director
+IRS990 > Form990 Part VII Section A Grp > Average Hours Per Week Rt: 1.0
+IRS990 > Form990 Part VII Section A Grp > Average Hours Per Week Rltd Org Rt: 0.0
+IRS990 > Form990 Part VII Section A Grp > Individual Trustee Or Director: X
+IRS990 > Form990 Part VII Section A Grp > Reportable Comp From Org: $0
+IRS990 > Form990 Part VII Section A Grp > Reportable Comp From Rltd Org: $0
+IRS990 > Form990 Part VII Section A Grp > Other Compensation: $0
+IRS990 > Form990 Part VII Section A Grp > Business Name > Business Name Line1: George R Lee III
+IRS990 > Form990 Part VII Section A Grp > Title: Director
+IRS990 > Form990 Part VII Section A Grp > Average Hours Per Week Rt: 1.0
+IRS990 > Form990 Part VII Section A Grp > Average Hours Per Week Rltd Org Rt: 0.0
+IRS990 > Form990 Part VII Section A Grp > Individual Trustee Or Director: X
+IRS990 > Form990 Part VII Section A Grp > Reportable Comp From Org: $0
+IRS990 > Form990 Part VII Section A Grp > Reportable Comp From Rltd Org: $0
+IRS990 > Form990 Part VII Section A Grp > Other Compensation: $0
+IRS990 > Form990 Part VII Section A Grp > Business Name > Business Name Line1: James Todd
+IRS990 > Form990 Part VII Section A Grp > Title: Director
+IRS990 > Form990 Part VII Section A Grp > Average Hours Per Week Rt: 1.0
+IRS990 > Form990 Part VII Section A Grp > Average Hours Per Week Rltd Org Rt: 0.0
+IRS990 > Form990 Part VII Section A Grp > Individual Trustee Or Director: X
+IRS990 > Form990 Part VII Section A Grp > Reportable Comp From Org: $0
+IRS990 > Form990 Part VII Section A Grp > Reportable Comp From Rltd Org: $0
+IRS990 > Form990 Part VII Section A Grp > Other Compensation: $0
+IRS990 > Form990 Part VII Section A Grp > Business Name > Business Name Line1: JEREMIE PAPIN
+IRS990 > Form990 Part VII Section A Grp > Title: DIRECTOR
+IRS990 > Form990 Part VII Section A Grp > Average Hours Per Week Rt: 1.0
+IRS990 > Form990 Part VII Section A Grp > Average Hours Per Week Rltd Org Rt: 0.0
+IRS990 > Form990 Part VII Section A Grp > Individual Trustee Or Director: X
+IRS990 > Form990 Part VII Section A Grp > Reportable Comp From Org: $0
+IRS990 > Form990 Part VII Section A Grp > Reportable Comp From Rltd Org: $0
+IRS990 > Form990 Part VII Section A Grp > Other Compensation: $0
+IRS990 > Form990 Part VII Section A Grp > Business Name > Business Name Line1: KARL SPRULES
+IRS990 > Form990 Part VII Section A Grp > Title: DIRECTOR
+IRS990 > Form990 Part VII Section A Grp > Average Hours Per Week Rt: 1.0
+IRS990 > Form990 Part VII Section A Grp > Average Hours Per Week Rltd Org Rt: 0.0
+IRS990 > Form990 Part VII Section A Grp > Individual Trustee Or Director: X
+IRS990 > Form990 Part VII Section A Grp > Reportable Comp From Org: $0
+IRS990 > Form990 Part VII Section A Grp > Reportable Comp From Rltd Org: $0
+IRS990 > Form990 Part VII Section A Grp > Other Compensation: $0
+IRS990 > Form990 Part VII Section A Grp > Business Name > Business Name Line1: Keith B Davis
+IRS990 > Form990 Part VII Section A Grp > Title: Director
+IRS990 > Form990 Part VII Section A Grp > Average Hours Per Week Rt: 1.0
+IRS990 > Form990 Part VII Section A Grp > Average Hours Per Week Rltd Org Rt: 0.0
+IRS990 > Form990 Part VII Section A Grp > Individual Trustee Or Director: X
+IRS990 > Form990 Part VII Section A Grp > Reportable Comp From Org: $0
+IRS990 > Form990 Part VII Section A Grp > Reportable Comp From Rltd Org: $0
+IRS990 > Form990 Part VII Section A Grp > Other Compensation: $0
+IRS990 > Form990 Part VII Section A Grp > Business Name > Business Name Line1: LAURA COVINGTON KIMBRELL
+IRS990 > Form990 Part VII Section A Grp > Title: DIRECTOR
+IRS990 > Form990 Part VII Section A Grp > Average Hours Per Week Rt: 1.0
+IRS990 > Form990 Part VII Section A Grp > Average Hours Per Week Rltd Org Rt: 0.0
+IRS990 > Form990 Part VII Section A Grp > Individual Trustee Or Director: X
+IRS990 > Form990 Part VII Section A Grp > Reportable Comp From Org: $0
+IRS990 > Form990 Part VII Section A Grp > Reportable Comp From Rltd Org: $0
+IRS990 > Form990 Part VII Section A Grp > Other Compensation: $0
+IRS990 > Form990 Part VII Section A Grp > Business Name > Business Name Line1: MARK TILLINGER
+IRS990 > Form990 Part VII Section A Grp > Title: DIRECTOR
+IRS990 > Form990 Part VII Section A Grp > Average Hours Per Week Rt: 1.0
+IRS990 > Form990 Part VII Section A Grp > Average Hours Per Week Rltd Org Rt: 0.0
+IRS990 > Form990 Part VII Section A Grp > Individual Trustee Or Director: X
+IRS990 > Form990 Part VII Section A Grp > Reportable Comp From Org: $0
+IRS990 > Form990 Part VII Section A Grp > Reportable Comp From Rltd Org: $0
+IRS990 > Form990 Part VII Section A Grp > Other Compensation: $0
+IRS990 > Form990 Part VII Section A Grp > Business Name > Business Name Line1: MARTHA R INGRAM
+IRS990 > Form990 Part VII Section A Grp > Title: DIRECTOR
+IRS990 > Form990 Part VII Section A Grp > Average Hours Per Week Rt: 1.0
+IRS990 > Form990 Part VII Section A Grp > Average Hours Per Week Rltd Org Rt: 0.0
+IRS990 > Form990 Part VII Section A Grp > Individual Trustee Or Director: X
+IRS990 > Form990 Part VII Section A Grp > Reportable Comp From Org: $0
+IRS990 > Form990 Part VII Section A Grp > Reportable Comp From Rltd Org: $0
+IRS990 > Form990 Part VII Section A Grp > Other Compensation: $0
+IRS990 > Form990 Part VII Section A Grp > Business Name > Business Name Line1: MARY CAVARRA
+IRS990 > Form990 Part VII Section A Grp > Title: DIRECTOR
+IRS990 > Form990 Part VII Section A Grp > Average Hours Per Week Rt: 1.0
+IRS990 > Form990 Part VII Section A Grp > Average Hours Per Week Rltd Org Rt: 0.0
+IRS990 > Form990 Part VII Section A Grp > Individual Trustee Or Director: X
+IRS990 > Form990 Part VII Section A Grp > Reportable Comp From Org: $0
+IRS990 > Form990 Part VII Section A Grp > Reportable Comp From Rltd Org: $0
+IRS990 > Form990 Part VII Section A Grp > Other Compensation: $0
+IRS990 > Form990 Part VII Section A Grp > Business Name > Business Name Line1: MELINDA BALSER
+IRS990 > Form990 Part VII Section A Grp > Title: DIRECTOR
+IRS990 > Form990 Part VII Section A Grp > Average Hours Per Week Rt: 1.0
+IRS990 > Form990 Part VII Section A Grp > Average Hours Per Week Rltd Org Rt: 0.0
+IRS990 > Form990 Part VII Section A Grp > Individual Trustee Or Director: X
+IRS990 > Form990 Part VII Section A Grp > Reportable Comp From Org: $0
+IRS990 > Form990 Part VII Section A Grp > Reportable Comp From Rltd Org: $0
+IRS990 > Form990 Part VII Section A Grp > Other Compensation: $0
+IRS990 > Form990 Part VII Section A Grp > Business Name > Business Name Line1: Michael Sposata
+IRS990 > Form990 Part VII Section A Grp > Title: Director
+IRS990 > Form990 Part VII Section A Grp > Average Hours Per Week Rt: 1.0
+IRS990 > Form990 Part VII Section A Grp > Average Hours Per Week Rltd Org Rt: 0.0
+IRS990 > Form990 Part VII Section A Grp > Individual Trustee Or Director: X
+IRS990 > Form990 Part VII Section A Grp > Reportable Comp From Org: $0
+IRS990 > Form990 Part VII Section A Grp > Reportable Comp From Rltd Org: $0
+IRS990 > Form990 Part VII Section A Grp > Other Compensation: $0
+IRS990 > Form990 Part VII Section A Grp > Business Name > Business Name Line1: MICHAEL W HAYES
+IRS990 > Form990 Part VII Section A Grp > Title: DIRECTOR
+IRS990 > Form990 Part VII Section A Grp > Average Hours Per Week Rt: 1.0
+IRS990 > Form990 Part VII Section A Grp > Average Hours Per Week Rltd Org Rt: 0.0
+IRS990 > Form990 Part VII Section A Grp > Individual Trustee Or Director: X
+IRS990 > Form990 Part VII Section A Grp > Reportable Comp From Org: $0
+IRS990 > Form990 Part VII Section A Grp > Reportable Comp From Rltd Org: $0
+IRS990 > Form990 Part VII Section A Grp > Other Compensation: $0
+IRS990 > Form990 Part VII Section A Grp > Business Name > Business Name Line1: MICHELLE COLLINS
+IRS990 > Form990 Part VII Section A Grp > Title: DIRECTOR (see SCHEDULE O)
+IRS990 > Form990 Part VII Section A Grp > Average Hours Per Week Rt: 40.0
+IRS990 > Form990 Part VII Section A Grp > Average Hours Per Week Rltd Org Rt: 0.0
+IRS990 > Form990 Part VII Section A Grp > Individual Trustee Or Director: X
+IRS990 > Form990 Part VII Section A Grp > Reportable Comp From Org: $37,310
+IRS990 > Form990 Part VII Section A Grp > Reportable Comp From Rltd Org: $0
+IRS990 > Form990 Part VII Section A Grp > Other Compensation: $6,940
+IRS990 > Form990 Part VII Section A Grp > Business Name > Business Name Line1: PATRICK MURPHY
+IRS990 > Form990 Part VII Section A Grp > Title: DIRECTOR
+IRS990 > Form990 Part VII Section A Grp > Average Hours Per Week Rt: 1.0
+IRS990 > Form990 Part VII Section A Grp > Average Hours Per Week Rltd Org Rt: 0.0
+IRS990 > Form990 Part VII Section A Grp > Individual Trustee Or Director: X
+IRS990 > Form990 Part VII Section A Grp > Reportable Comp From Org: $0
+IRS990 > Form990 Part VII Section A Grp > Reportable Comp From Rltd Org: $0
+IRS990 > Form990 Part VII Section A Grp > Other Compensation: $0
+IRS990 > Form990 Part VII Section A Grp > Business Name > Business Name Line1: PERI WIDENER
+IRS990 > Form990 Part VII Section A Grp > Title: DIRECTOR
+IRS990 > Form990 Part VII Section A Grp > Average Hours Per Week Rt: 1.0
+IRS990 > Form990 Part VII Section A Grp > Average Hours Per Week Rltd Org Rt: 0.0
+IRS990 > Form990 Part VII Section A Grp > Individual Trustee Or Director: X
+IRS990 > Form990 Part VII Section A Grp > Reportable Comp From Org: $0
+IRS990 > Form990 Part VII Section A Grp > Reportable Comp From Rltd Org: $0
+IRS990 > Form990 Part VII Section A Grp > Other Compensation: $0
+IRS990 > Form990 Part VII Section A Grp > Business Name > Business Name Line1: Phylanice Nashe JD
+IRS990 > Form990 Part VII Section A Grp > Title: Director
+IRS990 > Form990 Part VII Section A Grp > Average Hours Per Week Rt: 1.0
+IRS990 > Form990 Part VII Section A Grp > Average Hours Per Week Rltd Org Rt: 0.0
+IRS990 > Form990 Part VII Section A Grp > Individual Trustee Or Director: X
+IRS990 > Form990 Part VII Section A Grp > Reportable Comp From Org: $0
+IRS990 > Form990 Part VII Section A Grp > Reportable Comp From Rltd Org: $0
+IRS990 > Form990 Part VII Section A Grp > Other Compensation: $0
+IRS990 > Form990 Part VII Section A Grp > Business Name > Business Name Line1: RICHARD L MILLER
+IRS990 > Form990 Part VII Section A Grp > Title: DIRECTOR
+IRS990 > Form990 Part VII Section A Grp > Average Hours Per Week Rt: 1.0
+IRS990 > Form990 Part VII Section A Grp > Average Hours Per Week Rltd Org Rt: 0.0
+IRS990 > Form990 Part VII Section A Grp > Individual Trustee Or Director: X
+IRS990 > Form990 Part VII Section A Grp > Reportable Comp From Org: $0
+IRS990 > Form990 Part VII Section A Grp > Reportable Comp From Rltd Org: $0
+IRS990 > Form990 Part VII Section A Grp > Other Compensation: $0
+IRS990 > Form990 Part VII Section A Grp > Business Name > Business Name Line1: Rodney Essig
+IRS990 > Form990 Part VII Section A Grp > Title: Director
+IRS990 > Form990 Part VII Section A Grp > Average Hours Per Week Rt: 1.0
+IRS990 > Form990 Part VII Section A Grp > Average Hours Per Week Rltd Org Rt: 0.0
+IRS990 > Form990 Part VII Section A Grp > Individual Trustee Or Director: X
+IRS990 > Form990 Part VII Section A Grp > Reportable Comp From Org: $0
+IRS990 > Form990 Part VII Section A Grp > Reportable Comp From Rltd Org: $0
+IRS990 > Form990 Part VII Section A Grp > Other Compensation: $0
+IRS990 > Form990 Part VII Section A Grp > Business Name > Business Name Line1: SANDRA LIPMAN
+IRS990 > Form990 Part VII Section A Grp > Title: DIRECTOR
+IRS990 > Form990 Part VII Section A Grp > Average Hours Per Week Rt: 1.0
+IRS990 > Form990 Part VII Section A Grp > Average Hours Per Week Rltd Org Rt: 0.0
+IRS990 > Form990 Part VII Section A Grp > Individual Trustee Or Director: X
+IRS990 > Form990 Part VII Section A Grp > Reportable Comp From Org: $0
+IRS990 > Form990 Part VII Section A Grp > Reportable Comp From Rltd Org: $0
+IRS990 > Form990 Part VII Section A Grp > Other Compensation: $0
+IRS990 > Form990 Part VII Section A Grp > Business Name > Business Name Line1: SHIRLEY ZEITLIN
+IRS990 > Form990 Part VII Section A Grp > Title: DIRECTOR
+IRS990 > Form990 Part VII Section A Grp > Average Hours Per Week Rt: 1.0
+IRS990 > Form990 Part VII Section A Grp > Average Hours Per Week Rltd Org Rt: 0.0
+IRS990 > Form990 Part VII Section A Grp > Individual Trustee Or Director: X
+IRS990 > Form990 Part VII Section A Grp > Reportable Comp From Org: $0
+IRS990 > Form990 Part VII Section A Grp > Reportable Comp From Rltd Org: $0
+IRS990 > Form990 Part VII Section A Grp > Other Compensation: $0
+IRS990 > Form990 Part VII Section A Grp > Business Name > Business Name Line1: STEVEN BROWN
+IRS990 > Form990 Part VII Section A Grp > Title: DIRECTOR (see Schedule O)
+IRS990 > Form990 Part VII Section A Grp > Average Hours Per Week Rt: 40.0
+IRS990 > Form990 Part VII Section A Grp > Average Hours Per Week Rltd Org Rt: 0.0
+IRS990 > Form990 Part VII Section A Grp > Individual Trustee Or Director: X
+IRS990 > Form990 Part VII Section A Grp > Reportable Comp From Org: $40,992
+IRS990 > Form990 Part VII Section A Grp > Reportable Comp From Rltd Org: $0
+IRS990 > Form990 Part VII Section A Grp > Other Compensation: $6,479
+IRS990 > Form990 Part VII Section A Grp > Business Name > Business Name Line1: Teresa Mosley Sebastian
+IRS990 > Form990 Part VII Section A Grp > Title: Director
+IRS990 > Form990 Part VII Section A Grp > Average Hours Per Week Rt: 1.0
+IRS990 > Form990 Part VII Section A Grp > Average Hours Per Week Rltd Org Rt: 0.0
+IRS990 > Form990 Part VII Section A Grp > Individual Trustee Or Director: X
+IRS990 > Form990 Part VII Section A Grp > Reportable Comp From Org: $0
+IRS990 > Form990 Part VII Section A Grp > Reportable Comp From Rltd Org: $0
+IRS990 > Form990 Part VII Section A Grp > Other Compensation: $0
+IRS990 > Form990 Part VII Section A Grp > Business Name > Business Name Line1: Travis Vincent Dunn
+IRS990 > Form990 Part VII Section A Grp > Title: Director
+IRS990 > Form990 Part VII Section A Grp > Average Hours Per Week Rt: 1.0
+IRS990 > Form990 Part VII Section A Grp > Average Hours Per Week Rltd Org Rt: 0.0
+IRS990 > Form990 Part VII Section A Grp > Individual Trustee Or Director: X
+IRS990 > Form990 Part VII Section A Grp > Reportable Comp From Org: $0
+IRS990 > Form990 Part VII Section A Grp > Reportable Comp From Rltd Org: $0
+IRS990 > Form990 Part VII Section A Grp > Other Compensation: $0
+IRS990 > Form990 Part VII Section A Grp > Business Name > Business Name Line1: VICKI HORNE
+IRS990 > Form990 Part VII Section A Grp > Title: DIRECTOR
+IRS990 > Form990 Part VII Section A Grp > Average Hours Per Week Rt: 1.0
+IRS990 > Form990 Part VII Section A Grp > Average Hours Per Week Rltd Org Rt: 0.0
+IRS990 > Form990 Part VII Section A Grp > Individual Trustee Or Director: X
+IRS990 > Form990 Part VII Section A Grp > Reportable Comp From Org: $0
+IRS990 > Form990 Part VII Section A Grp > Reportable Comp From Rltd Org: $0
+IRS990 > Form990 Part VII Section A Grp > Other Compensation: $0
+IRS990 > Form990 Part VII Section A Grp > Business Name > Business Name Line1: Victoria Laughlin McCluggage
+IRS990 > Form990 Part VII Section A Grp > Title: Director
+IRS990 > Form990 Part VII Section A Grp > Average Hours Per Week Rt: 1.0
+IRS990 > Form990 Part VII Section A Grp > Average Hours Per Week Rltd Org Rt: 0.0
+IRS990 > Form990 Part VII Section A Grp > Individual Trustee Or Director: X
+IRS990 > Form990 Part VII Section A Grp > Reportable Comp From Org: $0
+IRS990 > Form990 Part VII Section A Grp > Reportable Comp From Rltd Org: $0
+IRS990 > Form990 Part VII Section A Grp > Other Compensation: $0
+IRS990 > Form990 Part VII Section A Grp > Business Name > Business Name Line1: VICTORIA PAO
+IRS990 > Form990 Part VII Section A Grp > Title: DIRECTOR
+IRS990 > Form990 Part VII Section A Grp > Average Hours Per Week Rt: 1.0
+IRS990 > Form990 Part VII Section A Grp > Average Hours Per Week Rltd Org Rt: 0.0
+IRS990 > Form990 Part VII Section A Grp > Individual Trustee Or Director: X
+IRS990 > Form990 Part VII Section A Grp > Reportable Comp From Org: $0
+IRS990 > Form990 Part VII Section A Grp > Reportable Comp From Rltd Org: $0
+IRS990 > Form990 Part VII Section A Grp > Other Compensation: $0
+IRS990 > Form990 Part VII Section A Grp > Business Name > Business Name Line1: W BRANTLEY PHILLIPS JR
+IRS990 > Form990 Part VII Section A Grp > Title: DIRECTOR
+IRS990 > Form990 Part VII Section A Grp > Average Hours Per Week Rt: 1.0
+IRS990 > Form990 Part VII Section A Grp > Average Hours Per Week Rltd Org Rt: 0.0
+IRS990 > Form990 Part VII Section A Grp > Individual Trustee Or Director: X
+IRS990 > Form990 Part VII Section A Grp > Reportable Comp From Org: $0
+IRS990 > Form990 Part VII Section A Grp > Reportable Comp From Rltd Org: $0
+IRS990 > Form990 Part VII Section A Grp > Other Compensation: $0
+IRS990 > Form990 Part VII Section A Grp > Business Name > Business Name Line1: WILLIAM JONES JR
+IRS990 > Form990 Part VII Section A Grp > Title: DIRECTOR
+IRS990 > Form990 Part VII Section A Grp > Average Hours Per Week Rt: 1.0
+IRS990 > Form990 Part VII Section A Grp > Average Hours Per Week Rltd Org Rt: 0.0
+IRS990 > Form990 Part VII Section A Grp > Individual Trustee Or Director: X
+IRS990 > Form990 Part VII Section A Grp > Reportable Comp From Org: $0
+IRS990 > Form990 Part VII Section A Grp > Reportable Comp From Rltd Org: $0
+IRS990 > Form990 Part VII Section A Grp > Other Compensation: $0
+IRS990 > Form990 Part VII Section A Grp > Business Name > Business Name Line1: JONATHAN MARX
+IRS990 > Form990 Part VII Section A Grp > Title: INTERIM COO/VP OF COMMUNICATIONS
+IRS990 > Form990 Part VII Section A Grp > Average Hours Per Week Rt: 40.0
+IRS990 > Form990 Part VII Section A Grp > Average Hours Per Week Rltd Org Rt: 0.0
+IRS990 > Form990 Part VII Section A Grp > Officer: X
+IRS990 > Form990 Part VII Section A Grp > Reportable Comp From Org: $100,420
+IRS990 > Form990 Part VII Section A Grp > Reportable Comp From Rltd Org: $0
+IRS990 > Form990 Part VII Section A Grp > Other Compensation: $10,899
+IRS990 > Form990 Part VII Section A Grp > Business Name > Business Name Line1: MARYE WALKER LEWIS
+IRS990 > Form990 Part VII Section A Grp > Title: CFO Consultant
+IRS990 > Form990 Part VII Section A Grp > Average Hours Per Week Rt: 40.0
+IRS990 > Form990 Part VII Section A Grp > Average Hours Per Week Rltd Org Rt: 0.0
+IRS990 > Form990 Part VII Section A Grp > Officer: X
+IRS990 > Form990 Part VII Section A Grp > Reportable Comp From Org: $168,902
+IRS990 > Form990 Part VII Section A Grp > Reportable Comp From Rltd Org: $0
+IRS990 > Form990 Part VII Section A Grp > Other Compensation: $6,616
+IRS990 > Form990 Part VII Section A Grp > Business Name > Business Name Line1: STEVEN BROSVIK
+IRS990 > Form990 Part VII Section A Grp > Title: COO (until 8/7/2020)
+IRS990 > Form990 Part VII Section A Grp > Average Hours Per Week Rt: 40.0
+IRS990 > Form990 Part VII Section A Grp > Average Hours Per Week Rltd Org Rt: 0.0
+IRS990 > Form990 Part VII Section A Grp > Officer: X
+IRS990 > Form990 Part VII Section A Grp > Reportable Comp From Org: $100,970
+IRS990 > Form990 Part VII Section A Grp > Reportable Comp From Rltd Org: $0
+IRS990 > Form990 Part VII Section A Grp > Other Compensation: $12,240
+IRS990 > Form990 Part VII Section A Grp > Business Name > Business Name Line1: GIANCARLO GUERERRO
+IRS990 > Form990 Part VII Section A Grp > Title: MUSIC DIRECTOR
+IRS990 > Form990 Part VII Section A Grp > Average Hours Per Week Rt: 40.0
+IRS990 > Form990 Part VII Section A Grp > Average Hours Per Week Rltd Org Rt: 0.0
+IRS990 > Form990 Part VII Section A Grp > Key Employee: X
+IRS990 > Form990 Part VII Section A Grp > Reportable Comp From Org: $272,917
+IRS990 > Form990 Part VII Section A Grp > Reportable Comp From Rltd Org: $0
+IRS990 > Form990 Part VII Section A Grp > Other Compensation: $14,892
+IRS990 > Form990 Part VII Section A Grp > Business Name > Business Name Line1: DANIEL B GROSSMAN
+IRS990 > Form990 Part VII Section A Grp > Title: VP OF MARKETING
+IRS990 > Form990 Part VII Section A Grp > Average Hours Per Week Rt: 40.0
+IRS990 > Form990 Part VII Section A Grp > Average Hours Per Week Rltd Org Rt: 0.0
+IRS990 > Form990 Part VII Section A Grp > Highest Compensated Employee: X
+IRS990 > Form990 Part VII Section A Grp > Reportable Comp From Org: $157,487
+IRS990 > Form990 Part VII Section A Grp > Reportable Comp From Rltd Org: $0
+IRS990 > Form990 Part VII Section A Grp > Other Compensation: $0
+IRS990 > Form990 Part VII Section A Grp > Business Name > Business Name Line1: ERIC SWARTZ
+IRS990 > Form990 Part VII Section A Grp > Title: VP OF VENUE MANAGEMENT
+IRS990 > Form990 Part VII Section A Grp > Average Hours Per Week Rt: 40.0
+IRS990 > Form990 Part VII Section A Grp > Average Hours Per Week Rltd Org Rt: 0.0
+IRS990 > Form990 Part VII Section A Grp > Highest Compensated Employee: X
+IRS990 > Form990 Part VII Section A Grp > Reportable Comp From Org: $102,123
+IRS990 > Form990 Part VII Section A Grp > Reportable Comp From Rltd Org: $0
+IRS990 > Form990 Part VII Section A Grp > Other Compensation: $5,470
+IRS990 > Form990 Part VII Section A Grp > Business Name > Business Name Line1: JONATHAN NORRIS
+IRS990 > Form990 Part VII Section A Grp > Title: VP OF DEVELOPMENT
+IRS990 > Form990 Part VII Section A Grp > Average Hours Per Week Rt: 40.0
+IRS990 > Form990 Part VII Section A Grp > Average Hours Per Week Rltd Org Rt: 0.0
+IRS990 > Form990 Part VII Section A Grp > Highest Compensated Employee: X
+IRS990 > Form990 Part VII Section A Grp > Reportable Comp From Org: $140,244
+IRS990 > Form990 Part VII Section A Grp > Reportable Comp From Rltd Org: $0
+IRS990 > Form990 Part VII Section A Grp > Other Compensation: $5,000
+IRS990 > Form990 Part VII Section A Grp > Business Name > Business Name Line1: JUN IWASAKI
+IRS990 > Form990 Part VII Section A Grp > Title: CONCERTMASTER
+IRS990 > Form990 Part VII Section A Grp > Average Hours Per Week Rt: 40.0
+IRS990 > Form990 Part VII Section A Grp > Average Hours Per Week Rltd Org Rt: 0.0
+IRS990 > Form990 Part VII Section A Grp > Highest Compensated Employee: X
+IRS990 > Form990 Part VII Section A Grp > Reportable Comp From Org: $109,666
+IRS990 > Form990 Part VII Section A Grp > Reportable Comp From Rltd Org: $0
+IRS990 > Form990 Part VII Section A Grp > Other Compensation: $7,124
+IRS990 > Total Reportable Comp From Org: $1,663,524
+IRS990 > Tot Reportable Comp Rltd Org: $0
+IRS990 > Total Other Compensation: $112,703
+IRS990 > Indiv Rcvd Greater Than100 K count: 8
+IRS990 > Former Ofcr Employees Listed: false
+IRS990 > Total Comp Greater Than150 K: true
+IRS990 > Compensation From Other Srcs: false
+Contractor Compensation Grp > Contractor Name > Business Name > Business Name Line1: Counter Productions Inc
+Contractor Compensation Grp > Contractor Address > US Address > Address Line1: C/o prager Fenton
+Contractor Compensation Grp > Contractor Address > US Address > Address Line2: Foreigner
+Contractor Compensation Grp > Contractor Address > US Address > City Nm: New York
+Contractor Compensation Grp > Contractor Address > US Address > State Abbreviation Cd: NY
+Contractor Compensation Grp > Contractor Address > US Address > ZIP Cd: 10017
+IRS990 > Contractor Compensation Grp > Services Desc: Artist Management Services
+IRS990 > Contractor Compensation Grp > Compensation: $236,026
+Contractor Compensation Grp > Contractor Name > Business Name > Business Name Line1: Bennett Direct
+Contractor Compensation Grp > Contractor Address > US Address > Address Line1: PO Box 0015
+Contractor Compensation Grp > Contractor Address > US Address > City Nm: Milwaukee
+Contractor Compensation Grp > Contractor Address > US Address > State Abbreviation Cd: WI
+Contractor Compensation Grp > Contractor Address > US Address > ZIP Cd: 532010015
+IRS990 > Contractor Compensation Grp > Services Desc: Professional Telefunding
+IRS990 > Contractor Compensation Grp > Compensation: $223,887
+Contractor Compensation Grp > Contractor Name > Business Name > Business Name Line1: Taillight Inc
+Contractor Compensation Grp > Contractor Address > US Address > Address Line1: 30 Middleton Street
+Contractor Compensation Grp > Contractor Address > US Address > City Nm: Nashville
+Contractor Compensation Grp > Contractor Address > US Address > State Abbreviation Cd: TN
+Contractor Compensation Grp > Contractor Address > US Address > ZIP Cd: 37210
+IRS990 > Contractor Compensation Grp > Services Desc: Broadcast Production Services
+IRS990 > Contractor Compensation Grp > Compensation: $163,961
+Contractor Compensation Grp > Contractor Name > Business Name > Business Name Line1: OPUS 3 ARTISTS
+Contractor Compensation Grp > Contractor Address > US Address > Address Line1: 470 PARK AVENUE SOUTH
+Contractor Compensation Grp > Contractor Address > US Address > Address Line2: 9TH FL NORTH
+Contractor Compensation Grp > Contractor Address > US Address > City Nm: NEW YORK
+Contractor Compensation Grp > Contractor Address > US Address > State Abbreviation Cd: NY
+Contractor Compensation Grp > Contractor Address > US Address > ZIP Cd: 10016
+IRS990 > Contractor Compensation Grp > Services Desc: ARTIST AGENCY
+IRS990 > Contractor Compensation Grp > Compensation: $117,000
+Contractor Compensation Grp > Contractor Name > Business Name > Business Name Line1: Allied Universal Security Services
+Contractor Compensation Grp > Contractor Address > US Address > Address Line1: PO Box 828854
+Contractor Compensation Grp > Contractor Address > US Address > City Nm: Philadelphia
+Contractor Compensation Grp > Contractor Address > US Address > State Abbreviation Cd: PA
+Contractor Compensation Grp > Contractor Address > US Address > ZIP Cd: 19182
+IRS990 > Contractor Compensation Grp > Services Desc: Security Service
+IRS990 > Contractor Compensation Grp > Compensation: $107,706
+IRS990 > Cntrct Rcvd Greater Than100 K count: 5
+IRS990 > Membership Dues: $2,100
+IRS990 > Fundraising: $1,204,951
+IRS990 > Government Grants: $1,052,987
+IRS990 > All Other Contributions: $8,002,108
+IRS990 > Total Contributions: $10,262,146
+IRS990 > Program Service Revenue Grp > Desc: Orchestra fees
+IRS990 > Program Service Revenue Grp > Business Cd: 711190
+IRS990 > Program Service Revenue Grp > Total Revenue Column: $15,000
+IRS990 > Program Service Revenue Grp > Related Or Exempt Func Income: $15,000
+IRS990 > Total Oth Program Service Rev Grp > Total Revenue Column: $0
+IRS990 > Total Oth Program Service Rev Grp > Related Or Exempt Func Income: $0
+IRS990 > Total Oth Program Service Rev Grp > Unrelated Business Revenue: $0
+IRS990 > Total Oth Program Service Rev Grp > Exclusion: $0
+IRS990 > Total Program Service Revenue: $15,000
+IRS990 > Investment Income Grp > Total Revenue Column: $220,299
+IRS990 > Investment Income Grp > Exclusion: $220,299
+IRS990 > Gross Rents Grp > Real: $151,722
+IRS990 > Less Rental Expenses Grp > Real: $1,236,767
+IRS990 > Rental Income Or Loss Grp > Real: -$1,085,045
+IRS990 > Rental Income Or Loss Grp > Personal: $0
+IRS990 > Net Rental Income Or Loss Grp > Total Revenue Column: -$1,085,045
+IRS990 > Net Rental Income Or Loss Grp > Unrelated Business Revenue: -$1,085,045
+IRS990 > Net Rental Income Or Loss Grp > Exclusion: $0
+IRS990 > Gross Amount Sales Assets Grp > Securities: $1,902,733
+IRS990 > Gross Amount Sales Assets Grp > Other: $1,350
+IRS990 > Less Cost Oth Basis Sales Expnss Grp > Securities: $1,469,472
+IRS990 > Less Cost Oth Basis Sales Expnss Grp > Other: $951
+IRS990 > Gain Or Loss Grp > Securities: $433,261
+IRS990 > Gain Or Loss Grp > Other: $399
+IRS990 > Net Gain Or Loss Investments Grp > Total Revenue Column: $433,660
+IRS990 > Net Gain Or Loss Investments Grp > Exclusion: $433,660
+IRS990 > Fundraising Gross Income: $32,425
+IRS990 > Contri Rpt Fundraising Event: $1,204,951
+IRS990 > Fundraising Direct Expenses: $407,868
+IRS990 > Net Incm From Fundraising Evt Grp > Total Revenue Column: -$375,443
+IRS990 > Net Incm From Fundraising Evt Grp > Exclusion: -$375,443
+IRS990 > Gross Sales Of Inventory: $4,370
+IRS990 > Cost Of Goods Sold: $938
+IRS990 > Net Income Or Loss Grp > Total Revenue Column: $3,432
+IRS990 > Net Income Or Loss Grp > Related Or Exempt Func Income: $3,432
+IRS990 > Other Revenue Misc Grp > Desc: TICKET HANDLING CHARGES/FACILITY FEES
+IRS990 > Other Revenue Misc Grp > Business Cd: 711190
+IRS990 > Other Revenue Misc Grp > Total Revenue Column: $12,109
+IRS990 > Other Revenue Misc Grp > Related Or Exempt Func Income: $12,109
+IRS990 > Other Revenue Misc Grp > Desc: GAIN ON EXTINGUISHMENT OF DEBT
+IRS990 > Other Revenue Misc Grp > Business Cd: 900099
+IRS990 > Other Revenue Misc Grp > Total Revenue Column: $2,880,520
+IRS990 > Other Revenue Misc Grp > Exclusion: $2,880,520
+IRS990 > Miscellaneous Revenue Grp > Total Revenue Column: $0
+IRS990 > Miscellaneous Revenue Grp > Related Or Exempt Func Income: $0
+IRS990 > Miscellaneous Revenue Grp > Unrelated Business Revenue: $0
+IRS990 > Miscellaneous Revenue Grp > Exclusion: $0
+IRS990 > Other Revenue Total: $2,892,629
+IRS990 > Total Revenue Grp > Total Revenue Column: $12,366,678
+IRS990 > Total Revenue Grp > Related Or Exempt Func Income: $30,541
+IRS990 > Total Revenue Grp > Unrelated Business Revenue: -$1,085,045
+IRS990 > Total Revenue Grp > Exclusion: $3,159,036
+IRS990 > Comp Current Ofcr Directors Grp > Total: $865,343
+IRS990 > Comp Current Ofcr Directors Grp > Program Services: $360,892
+IRS990 > Comp Current Ofcr Directors Grp > Management And General: $504,451
+IRS990 > Other Salaries And Wages Grp > Total: $3,037,099
+IRS990 > Other Salaries And Wages Grp > Program Services: $2,461,875
+IRS990 > Other Salaries And Wages Grp > Management And General: $295,729
+IRS990 > Other Salaries And Wages Grp > Fundraising: $279,495
+IRS990 > Pension Plan Contributions Grp > Total: $128,289
+IRS990 > Pension Plan Contributions Grp > Program Services: $128,289
+IRS990 > Other Employee Benefits Grp > Total: $891,789
+IRS990 > Other Employee Benefits Grp > Program Services: $754,990
+IRS990 > Other Employee Benefits Grp > Management And General: $108,207
+IRS990 > Other Employee Benefits Grp > Fundraising: $28,592
+IRS990 > Payroll Taxes Grp > Total: $361,715
+IRS990 > Payroll Taxes Grp > Program Services: $304,913
+IRS990 > Payroll Taxes Grp > Management And General: $36,224
+IRS990 > Payroll Taxes Grp > Fundraising: $20,578
+IRS990 > Fees For Services Legal Grp > Total: $158,162
+IRS990 > Fees For Services Legal Grp > Management And General: $158,162
+IRS990 > Fees For Services Accounting Grp > Total: $75,000
+IRS990 > Fees For Services Accounting Grp > Management And General: $75,000
+IRS990 > Fees For Services Prof Fundraising > Total: $210,164
+IRS990 > Fees For Services Prof Fundraising > Fundraising: $210,164
+IRS990 > Fees For Srvc Invst Mgmnt Fees Grp > Total: $162,812
+IRS990 > Fees For Srvc Invst Mgmnt Fees Grp > Management And General: $162,812
+IRS990 > Fees For Services Other Grp > Total: $357,633
+IRS990 > Fees For Services Other Grp > Program Services: $176,738
+IRS990 > Fees For Services Other Grp > Management And General: $88,731
+IRS990 > Fees For Services Other Grp > Fundraising: $92,164
+IRS990 > Advertising Grp > Total: $37,071
+IRS990 > Advertising Grp > Program Services: $37,071
+IRS990 > Office Expenses Grp > Total: $103,070
+IRS990 > Office Expenses Grp > Program Services: $15,515
+IRS990 > Office Expenses Grp > Management And General: $51,975
+IRS990 > Office Expenses Grp > Fundraising: $35,580
+IRS990 > Information Technology Grp > Total: $208,854
+IRS990 > Information Technology Grp > Management And General: $208,854
+IRS990 > Occupancy Grp > Total: $422,455
+IRS990 > Occupancy Grp > Program Services: $411,854
+IRS990 > Occupancy Grp > Management And General: $9,401
+IRS990 > Occupancy Grp > Fundraising: $1,200
+IRS990 > Travel Grp > Total: $254
+IRS990 > Travel Grp > Program Services: $0
+IRS990 > Travel Grp > Fundraising: $254
+IRS990 > Conferences Meetings Grp > Total: $1,414
+IRS990 > Conferences Meetings Grp > Program Services: $600
+IRS990 > Conferences Meetings Grp > Management And General: $594
+IRS990 > Conferences Meetings Grp > Fundraising: $220
+IRS990 > Interest Grp > Total: $486,720
+IRS990 > Interest Grp > Program Services: $486,720
+IRS990 > Interest Grp > Management And General: $0
+IRS990 > Depreciation Depletion Grp > Total: $2,070,863
+IRS990 > Depreciation Depletion Grp > Program Services: $1,636,919
+IRS990 > Depreciation Depletion Grp > Management And General: $290,742
+IRS990 > Depreciation Depletion Grp > Fundraising: $143,202
+IRS990 > Insurance Grp > Total: $230,186
+IRS990 > Insurance Grp > Program Services: $111,979
+IRS990 > Insurance Grp > Management And General: $118,207
+IRS990 > Other Expenses Grp > Desc: BANK CHARGES
+IRS990 > Other Expenses Grp > Total: $78,923
+IRS990 > Other Expenses Grp > Management And General: $78,923
+IRS990 > Other Expenses Grp > Fundraising: $0
+IRS990 > Other Expenses Grp > Desc: CONCERT PRODUCTION
+IRS990 > Other Expenses Grp > Total: $11,903
+IRS990 > Other Expenses Grp > Program Services: $11,903
+IRS990 > Other Expenses Grp > Desc: DUES & SUBSCRIPTIONS
+IRS990 > Other Expenses Grp > Total: $85,050
+IRS990 > Other Expenses Grp > Program Services: $3,472
+IRS990 > Other Expenses Grp > Management And General: $57,526
+IRS990 > Other Expenses Grp > Fundraising: $24,052
+IRS990 > Other Expenses Grp > Desc: REPAIRS & MAINTENANCE
+IRS990 > Other Expenses Grp > Total: $35,780
+IRS990 > Other Expenses Grp > Program Services: $35,780
+IRS990 > All Other Expenses Grp > Total: $320,569
+IRS990 > All Other Expenses Grp > Program Services: $268,108
+IRS990 > All Other Expenses Grp > Management And General: $37,711
+IRS990 > All Other Expenses Grp > Fundraising: $14,750
+IRS990 > Total Functional Expenses Grp > Total: $10,341,118
+IRS990 > Total Functional Expenses Grp > Program Services: $7,207,618
+IRS990 > Total Functional Expenses Grp > Management And General: $2,283,249
+IRS990 > Total Functional Expenses Grp > Fundraising: $850,251
+IRS990 > Cash Non Interest Bearing Grp > BOY: $1,662,953
+IRS990 > Cash Non Interest Bearing Grp > EOY: $8,307,961
+IRS990 > Savings And Temp Cash Invst Grp > BOY: $3,597,451
+IRS990 > Savings And Temp Cash Invst Grp > EOY: $3,498,288
+IRS990 > Pledges And Grants Receivable Grp > BOY: $2,478,301
+IRS990 > Pledges And Grants Receivable Grp > EOY: $2,668,040
+IRS990 > Accounts Receivable Grp > BOY: $128,065
+IRS990 > Accounts Receivable Grp > EOY: $626,083
+IRS990 > Receivables From Officers Etc Grp > BOY: $0
+IRS990 > Receivables From Officers Etc Grp > EOY: $0
+IRS990 > Rcvbl From Disqualified Prsn Grp > BOY: $0
+IRS990 > Rcvbl From Disqualified Prsn Grp > EOY: $0
+IRS990 > Oth Notes Loans Receivable Net Grp > BOY: $0
+IRS990 > Inventories For Sale Or Use Grp > BOY: $117,802
+IRS990 > Inventories For Sale Or Use Grp > EOY: $112,640
+IRS990 > Prepaid Expenses Defrd Charges Grp > BOY: $395,237
+IRS990 > Prepaid Expenses Defrd Charges Grp > EOY: $437,093
+IRS990 > Land Bldg Equip Cost Or Other Bss: $147,867,470
+IRS990 > Land Bldg Equip Accum Deprec: $77,941,643
+IRS990 > Land Bldg Equip Basis Net Grp > BOY: $72,387,534
+IRS990 > Land Bldg Equip Basis Net Grp > EOY: $69,925,827
+IRS990 > Investments Pub Traded Sec Grp > BOY: $11,756,514
+IRS990 > Investments Pub Traded Sec Grp > EOY: $14,455,976
+IRS990 > Investments Other Securities Grp > BOY: $0
+IRS990 > Investments Program Related Grp > BOY: $0
+IRS990 > Other Assets Total Grp > BOY: $0
+IRS990 > Other Assets Total Grp > EOY: $0
+IRS990 > Total Assets Grp > BOY: $92,523,857
+IRS990 > Total Assets Grp > EOY: $100,031,908
+IRS990 > Accounts Payable Accr Expnss Grp > BOY: $1,889,214
+IRS990 > Accounts Payable Accr Expnss Grp > EOY: $2,018,405
+IRS990 > Grants Payable Grp > BOY: $0
+IRS990 > Deferred Revenue Grp > BOY: $4,608,834
+IRS990 > Deferred Revenue Grp > EOY: $8,916,619
+IRS990 > Tax Exempt Bond Liabilities Grp > BOY: $0
+IRS990 > Escrow Account Liability Grp > BOY: $0
+IRS990 > Loans From Officers Directors Grp > BOY: $20,000,000
+IRS990 > Loans From Officers Directors Grp > EOY: $20,000,000
+IRS990 > Unsecured Notes Loans Payable Grp > BOY: $2,847,380
+IRS990 > Unsecured Notes Loans Payable Grp > EOY: $2,000,000
+IRS990 > Other Liabilities Grp > BOY: $0
+IRS990 > Other Liabilities Grp > EOY: $0
+IRS990 > Total Liabilities Grp > BOY: $29,345,428
+IRS990 > Total Liabilities Grp > EOY: $32,935,024
+IRS990 > Organization Follows FASB117: X
+IRS990 > No Donor Restriction Net Assets Grp > BOY: $55,916,225
+IRS990 > No Donor Restriction Net Assets Grp > EOY: $60,285,379
+IRS990 > Donor Restriction Net Assets Grp > BOY: $7,262,204
+IRS990 > Donor Restriction Net Assets Grp > EOY: $6,811,505
+IRS990 > Total Net Assets Fund Balance Grp > BOY: $63,178,429
+IRS990 > Total Net Assets Fund Balance Grp > EOY: $67,096,884
+IRS990 > Tot Liab Net Assets Fund Balance Grp > BOY: $92,523,857
+IRS990 > Tot Liab Net Assets Fund Balance Grp > EOY: $100,031,908
+IRS990 > Info In Schedule O Part XI: X
+IRS990 > Reconcilation Revenue Expnss: $2,025,560
+IRS990 > Net Unrlzd Gains Losses Invst: $1,985,237
+IRS990 > Other Changes In Net Assets: -$92,342
+IRS990 > Method Of Accounting Accrual: X
+IRS990 > Accountant Compile Or Review: false
+IRS990 > FS Audited: true
+IRS990 > FS Audited Basis Grp > Separate Basis Fincl Stmt: X
+IRS990 > Audit Committee: true
+IRS990 > Federal Grant Audit Required: false
+IRS990 Schedule A > Publicly Supported Org509a2: X
+IRS990 Schedule A > Gifts Grants Contris Rcvd509 Grp > Current Tax Year Minus4 Years: $7,798,807
+IRS990 Schedule A > Gifts Grants Contris Rcvd509 Grp > Current Tax Year Minus3 Years: $8,289,589
+IRS990 Schedule A > Gifts Grants Contris Rcvd509 Grp > Current Tax Year Minus2 Years: $9,667,688
+IRS990 Schedule A > Gifts Grants Contris Rcvd509 Grp > Current Tax Year Minus1 Year: $9,367,661
+IRS990 Schedule A > Gifts Grants Contris Rcvd509 Grp > Current Tax Year: $10,262,146
+IRS990 Schedule A > Gifts Grants Contris Rcvd509 Grp > Total: $45,385,891
+IRS990 Schedule A > Gross Receipts Admissions Grp > Current Tax Year Minus4 Years: $13,613,168
+IRS990 Schedule A > Gross Receipts Admissions Grp > Current Tax Year Minus3 Years: $14,544,736
+IRS990 Schedule A > Gross Receipts Admissions Grp > Current Tax Year Minus2 Years: $13,733,711
+IRS990 Schedule A > Gross Receipts Admissions Grp > Current Tax Year Minus1 Year: $7,800,993
+IRS990 Schedule A > Gross Receipts Admissions Grp > Current Tax Year: $30,541
+IRS990 Schedule A > Gross Receipts Admissions Grp > Total: $49,723,149
+IRS990 Schedule A > Gross Receipts Non Unrlt Bus Grp > Total: $0
+IRS990 Schedule A > Tax Rev Levied Orgnztnl Bnft509 Grp > Total: $0
+IRS990 Schedule A > Govt Furn Srvc Fclts Vl509 Grp > Total: $0
+IRS990 Schedule A > Total509 Grp > Current Tax Year Minus4 Years: $21,411,975
+IRS990 Schedule A > Total509 Grp > Current Tax Year Minus3 Years: $22,834,325
+IRS990 Schedule A > Total509 Grp > Current Tax Year Minus2 Years: $23,401,399
+IRS990 Schedule A > Total509 Grp > Current Tax Year Minus1 Year: $17,168,654
+IRS990 Schedule A > Total509 Grp > Current Tax Year: $10,292,687
+IRS990 Schedule A > Total509 Grp > Total: $95,109,040
+IRS990 Schedule A > Amounts Rcvd Dsqlfy Person Grp > Current Tax Year Minus4 Years: $596,707
+IRS990 Schedule A > Amounts Rcvd Dsqlfy Person Grp > Current Tax Year Minus3 Years: $657,138
+IRS990 Schedule A > Amounts Rcvd Dsqlfy Person Grp > Current Tax Year Minus2 Years: $608,142
+IRS990 Schedule A > Amounts Rcvd Dsqlfy Person Grp > Current Tax Year Minus1 Year: $806,113
+IRS990 Schedule A > Amounts Rcvd Dsqlfy Person Grp > Current Tax Year: $536,707
+IRS990 Schedule A > Amounts Rcvd Dsqlfy Person Grp > Total: $3,204,807
+IRS990 Schedule A > Substantial Contributors Grp > Current Tax Year Minus4 Years: $0
+IRS990 Schedule A > Substantial Contributors Grp > Current Tax Year Minus3 Years: $0
+IRS990 Schedule A > Substantial Contributors Grp > Current Tax Year Minus2 Years: $0
+IRS990 Schedule A > Substantial Contributors Grp > Current Tax Year Minus1 Year: $0
+IRS990 Schedule A > Substantial Contributors Grp > Current Tax Year: $0
+IRS990 Schedule A > Substantial Contributors Grp > Total: $0
+IRS990 Schedule A > Subst And Dsqlfy Prsns Tot Grp > Current Tax Year Minus4 Years: $596,707
+IRS990 Schedule A > Subst And Dsqlfy Prsns Tot Grp > Current Tax Year Minus3 Years: $657,138
+IRS990 Schedule A > Subst And Dsqlfy Prsns Tot Grp > Current Tax Year Minus2 Years: $608,142
+IRS990 Schedule A > Subst And Dsqlfy Prsns Tot Grp > Current Tax Year Minus1 Year: $806,113
+IRS990 Schedule A > Subst And Dsqlfy Prsns Tot Grp > Current Tax Year: $536,707
+IRS990 Schedule A > Subst And Dsqlfy Prsns Tot Grp > Total: $3,204,807
+IRS990 Schedule A > Public Support Total509: $91,904,233
+IRS990 Schedule A > Gross Investment Income509 Grp > Current Tax Year Minus4 Years: $1,877,398
+IRS990 Schedule A > Gross Investment Income509 Grp > Current Tax Year Minus3 Years: $1,846,299
+IRS990 Schedule A > Gross Investment Income509 Grp > Current Tax Year Minus2 Years: $1,860,293
+IRS990 Schedule A > Gross Investment Income509 Grp > Current Tax Year Minus1 Year: $1,535,966
+IRS990 Schedule A > Gross Investment Income509 Grp > Current Tax Year: $372,021
+IRS990 Schedule A > Gross Investment Income509 Grp > Total: $7,491,977
+IRS990 Schedule A > Post1975 UBTI Grp > Current Tax Year Minus4 Years: $0
+IRS990 Schedule A > Post1975 UBTI Grp > Current Tax Year Minus3 Years: $0
+IRS990 Schedule A > Post1975 UBTI Grp > Current Tax Year Minus2 Years: $0
+IRS990 Schedule A > Post1975 UBTI Grp > Current Tax Year Minus1 Year: $0
+IRS990 Schedule A > Post1975 UBTI Grp > Current Tax Year: $0
+IRS990 Schedule A > Post1975 UBTI Grp > Total: $0
+IRS990 Schedule A > Investment Income And UBTI Grp > Current Tax Year Minus4 Years: $1,877,398
+IRS990 Schedule A > Investment Income And UBTI Grp > Current Tax Year Minus3 Years: $1,846,299
+IRS990 Schedule A > Investment Income And UBTI Grp > Current Tax Year Minus2 Years: $1,860,293
+IRS990 Schedule A > Investment Income And UBTI Grp > Current Tax Year Minus1 Year: $1,535,966
+IRS990 Schedule A > Investment Income And UBTI Grp > Current Tax Year: $372,021
+IRS990 Schedule A > Investment Income And UBTI Grp > Total: $7,491,977
+IRS990 Schedule A > Net Income From Other UBI Grp > Current Tax Year Minus4 Years: $0
+IRS990 Schedule A > Net Income From Other UBI Grp > Current Tax Year Minus3 Years: $0
+IRS990 Schedule A > Net Income From Other UBI Grp > Current Tax Year Minus2 Years: $0
+IRS990 Schedule A > Net Income From Other UBI Grp > Current Tax Year Minus1 Year: $0
+IRS990 Schedule A > Net Income From Other UBI Grp > Current Tax Year: $0
+IRS990 Schedule A > Net Income From Other UBI Grp > Total: $0
+IRS990 Schedule A > Other Income509 Grp > Current Tax Year Minus4 Years: $117,884
+IRS990 Schedule A > Other Income509 Grp > Current Tax Year Minus3 Years: $129,965
+IRS990 Schedule A > Other Income509 Grp > Current Tax Year Minus2 Years: $143,785
+IRS990 Schedule A > Other Income509 Grp > Current Tax Year Minus1 Year: $72,330
+IRS990 Schedule A > Other Income509 Grp > Current Tax Year: $2,912,945
+IRS990 Schedule A > Other Income509 Grp > Total: $3,376,909
+IRS990 Schedule A > Total Support Calendar Year Grp > Current Tax Year Minus4 Years: $23,407,257
+IRS990 Schedule A > Total Support Calendar Year Grp > Current Tax Year Minus3 Years: $24,810,589
+IRS990 Schedule A > Total Support Calendar Year Grp > Current Tax Year Minus2 Years: $25,405,477
+IRS990 Schedule A > Total Support Calendar Year Grp > Current Tax Year Minus1 Year: $18,776,950
+IRS990 Schedule A > Total Support Calendar Year Grp > Current Tax Year: $13,577,653
+IRS990 Schedule A > Total Support Calendar Year Grp > Total: $105,977,926
+IRS990 Schedule A > Public Support CY509 Pct: 0.8672
+IRS990 Schedule A > Public Support PY509 Pct: 0.8835
+IRS990 Schedule A > Investment Income CY Pct: 0.07
+IRS990 Schedule A > Investment Income PY Pct: 0.0776
+IRS990 Schedule A > Thirty Thr Pct Suprt Tests CY509: X
+IRS990 Schedule A > Form990 Schedule A Part VI Grp > Form And Line Reference Desc: Schedule A, Part III Line 2 & Line 12 restatement
+IRS990 Schedule A > Form990 Schedule A Part VI Grp > Explanation: Lines 2 and 12 of Schedule A, Part III have been restated for all years shown to report inventory sales amounts correctly.
+IRS990 Schedule A > Form990 Schedule A Part VI Grp > Form And Line Reference Desc: Schedule A, Part III, Line 12 Other Income
+IRS990 Schedule A > Form990 Schedule A Part VI Grp > Explanation: DESCRIPTION - FUNDRAISING REVENUE, COLUMN A - 117884.0, COLUMN B - 129965.0, COLUMN C - 143785.0, COLUMN D - 65830.0, COLUMN E - 32425.0, COLUMN F - 489889.0; DESCRIPTION - INSURANCE PROCEEDS, COLUMN A - 0.0, COLUMN B - 0.0, COLUMN C - 0.0, COLUMN D - 6500.0, COLUMN E - 0.0, COLUMN F - 6500.0; DESCRIPTION - GAIN ON EXTINGUISHMENT OF DEBT, COLUMN A - 0.0, COLUMN B - 0.0, COLUMN C - 0.0, COLUMN D - 0.0, COLUMN E - 2880520.0, COLUMN F - 2880520.0;
+IRS990 Schedule B > Contributor Information Grp > Contributor Num: RESTRICTED
+IRS990 Schedule B > Contributor Information Grp > Contributor Business Name > Business Name Line1: RESTRICTED
+IRS990 Schedule B > Contributor Information Grp > Contributor US Address > Address Line1: RESTRICTED
+IRS990 Schedule B > Contributor Information Grp > Contributor US Address > Address Line2: RESTRICTED
+IRS990 Schedule B > Contributor Information Grp > Contributor US Address > City: RESTRICTED
+IRS990 Schedule B > Contributor Information Grp > Contributor US Address > State: RESTRICTED
+IRS990 Schedule B > Contributor Information Grp > Contributor US Address > ZIP Code: RESTRICTED
+IRS990 Schedule B > Contributor Information Grp > Total Contributions: RESTRICTED
+IRS990 Schedule D > CY Endwmt Fund Grp > Beginning Year Balance: $10,291,899
+IRS990 Schedule D > CY Endwmt Fund Grp > Contributions: $371,229
+IRS990 Schedule D > CY Endwmt Fund Grp > Investment Earnings Or Losses: $2,466,108
+IRS990 Schedule D > CY Endwmt Fund Grp > Grants Or Scholarships: $0
+IRS990 Schedule D > CY Endwmt Fund Grp > Other Expenditures: $528,011
+IRS990 Schedule D > CY Endwmt Fund Grp > Administrative Expenses: $144,554
+IRS990 Schedule D > CY Endwmt Fund Grp > End Year Balance: $12,456,671
+IRS990 Schedule D > CY Minus1 Yr Endwmt Fund Grp > Beginning Year Balance: $10,787,087
+IRS990 Schedule D > CY Minus1 Yr Endwmt Fund Grp > Contributions: $53,499
+IRS990 Schedule D > CY Minus1 Yr Endwmt Fund Grp > Investment Earnings Or Losses: $63,949
+IRS990 Schedule D > CY Minus1 Yr Endwmt Fund Grp > Grants Or Scholarships: $0
+IRS990 Schedule D > CY Minus1 Yr Endwmt Fund Grp > Other Expenditures: $534,221
+IRS990 Schedule D > CY Minus1 Yr Endwmt Fund Grp > Administrative Expenses: $78,415
+IRS990 Schedule D > CY Minus1 Yr Endwmt Fund Grp > End Year Balance: $10,291,899
+IRS990 Schedule D > CY Minus2 Yr Endwmt Fund Grp > Beginning Year Balance: $11,121,240
+IRS990 Schedule D > CY Minus2 Yr Endwmt Fund Grp > Contributions: $4,752
+IRS990 Schedule D > CY Minus2 Yr Endwmt Fund Grp > Investment Earnings Or Losses: $296,373
+IRS990 Schedule D > CY Minus2 Yr Endwmt Fund Grp > Grants Or Scholarships: $0
+IRS990 Schedule D > CY Minus2 Yr Endwmt Fund Grp > Other Expenditures: $526,898
+IRS990 Schedule D > CY Minus2 Yr Endwmt Fund Grp > Administrative Expenses: $108,380
+IRS990 Schedule D > CY Minus2 Yr Endwmt Fund Grp > End Year Balance: $10,787,087
+IRS990 Schedule D > CY Minus3 Yr Endwmt Fund Grp > Beginning Year Balance: $10,796,215
+IRS990 Schedule D > CY Minus3 Yr Endwmt Fund Grp > Contributions: $164,153
+IRS990 Schedule D > CY Minus3 Yr Endwmt Fund Grp > Investment Earnings Or Losses: $711,734
+IRS990 Schedule D > CY Minus3 Yr Endwmt Fund Grp > Grants Or Scholarships: $0
+IRS990 Schedule D > CY Minus3 Yr Endwmt Fund Grp > Other Expenditures: $447,908
+IRS990 Schedule D > CY Minus3 Yr Endwmt Fund Grp > Administrative Expenses: $102,954
+IRS990 Schedule D > CY Minus3 Yr Endwmt Fund Grp > End Year Balance: $11,121,240
+IRS990 Schedule D > CY Minus4 Yr Endwmt Fund Grp > Beginning Year Balance: $10,332,572
+IRS990 Schedule D > CY Minus4 Yr Endwmt Fund Grp > Contributions: $51,695
+IRS990 Schedule D > CY Minus4 Yr Endwmt Fund Grp > Investment Earnings Or Losses: $894,966
+IRS990 Schedule D > CY Minus4 Yr Endwmt Fund Grp > Grants Or Scholarships: $0
+IRS990 Schedule D > CY Minus4 Yr Endwmt Fund Grp > Other Expenditures: $386,774
+IRS990 Schedule D > CY Minus4 Yr Endwmt Fund Grp > Administrative Expenses: $96,244
+IRS990 Schedule D > CY Minus4 Yr Endwmt Fund Grp > End Year Balance: $10,796,215
+IRS990 Schedule D > Board Designated Balance EOY Pct: 0.8949
+IRS990 Schedule D > Prmnnt Endowment Balance EOY Pct: 0.1051
+IRS990 Schedule D > Term Endowment Balance EOY Pct: 0.0
+IRS990 Schedule D > Endowments Held Unrelated Org: false
+IRS990 Schedule D > Endowments Held Related Org: true
+IRS990 Schedule D > Related Org List Sch R: true
+IRS990 Schedule D > Land Grp > Other Cost Or Other Basis: $3,500,000
+IRS990 Schedule D > Land Grp > Book Value: $3,500,000
+IRS990 Schedule D > Buildings Grp > Other Cost Or Other Basis: $132,691,673
+IRS990 Schedule D > Buildings Grp > Depreciation: $71,351,448
+IRS990 Schedule D > Buildings Grp > Book Value: $61,340,225
+IRS990 Schedule D > Leasehold Improvements Grp > Other Cost Or Other Basis: $0
+IRS990 Schedule D > Leasehold Improvements Grp > Depreciation: $0
+IRS990 Schedule D > Leasehold Improvements Grp > Book Value: $0
+IRS990 Schedule D > Equipment Grp > Other Cost Or Other Basis: $8,505,942
+IRS990 Schedule D > Equipment Grp > Depreciation: $6,590,195
+IRS990 Schedule D > Equipment Grp > Book Value: $1,915,747
+IRS990 Schedule D > Other Land Buildings Grp > Other Cost Or Other Basis: $3,169,855
+IRS990 Schedule D > Other Land Buildings Grp > Depreciation: $0
+IRS990 Schedule D > Other Land Buildings Grp > Book Value: $3,169,855
+IRS990 Schedule D > Total Book Value Land Buildings: $69,925,827
+IRS990 Schedule D > Total Liability: $0
+IRS990 Schedule D > Footnote Text: X
+IRS990 Schedule D > Total Rev Etc Audited Fincl Stmt: $15,133,329
+IRS990 Schedule D > Net Unrealized Gains Invst: $1,985,237
+IRS990 Schedule D > Donated Services And Use Fclts: $129,028
+IRS990 Schedule D > Other Revenue: $0
+IRS990 Schedule D > Revenue Not Reported: $2,114,265
+IRS990 Schedule D > Revenue Subtotal: $13,019,064
+IRS990 Schedule D > Investment Expenses Not Incld: $162,812
+IRS990 Schedule D > Other Revenues Not Included: -$815,198
+IRS990 Schedule D > Revenue Not Reported Fincl Stmt: -$652,386
+IRS990 Schedule D > Total Revenue Per Form990: $12,366,678
+IRS990 Schedule D > Tot Expns Etc Audited Fincl Stmt: $11,214,874
+IRS990 Schedule D > Donated Services Use Fclts: $129,028
+IRS990 Schedule D > Other Expenses Included: $907,540
+IRS990 Schedule D > Expenses Not Reported: $1,036,568
+IRS990 Schedule D > Expenses Subtotal: $10,178,306
+IRS990 Schedule D > Investment Expenses Not Incld2: $162,812
+IRS990 Schedule D > Other Expenses Not Included: $0
+IRS990 Schedule D > Expenses Not Rpt Fincl Stmt: $162,812
+IRS990 Schedule D > Total Expenses Per Form990: $10,341,118
+IRS990 Schedule D > Supplemental Information Detail > Form And Line Reference Desc: Schedule D, Part V, Line 4 Intended uses of endowment funds
+IRS990 Schedule D > Supplemental Information Detail > Explanation: The investment funds are used for mission related activities.
+IRS990 Schedule D > Supplemental Information Detail > Form And Line Reference Desc: Schedule D, Part X, Line 2 FIN 48 (ASC 740) footnote
+IRS990 Schedule D > Supplemental Information Detail > Explanation: THE ASSOCIATION IS EXEMPT FROM FEDERAL INCOME TAXES UNDER SECTION 501(C)(3) OF THE INTERNAL REVENUE CODE; ACCORDINGLY, NO PROVISION FOR INCOME TAXES HAS BEEN MADE IN THE ACCOMPANYING FINANCIAL STATEMENTS. IN ACCORDANCE WITH APPLICABLE GUIDANCE, THE ASSOCIATION WILL RECOGNIZE A TAX BENEFIT ONLY IF IT IS MORE-LIKELY-THAN-NOT THE TAX POSITION WOULD BE SUSTAINED IN A TAX EXAMINATION, WITH A TAX EXAMINATION BEING PRESUMED TO OCCUR. THE AMOUNT RECOGNIZED WILL BE THE LARGEST AMOUNT OF TAX BENEFIT THAT IS GREATER THAN 50% LIKELY OF BEING REALIZED ON EXAMINATION. FOR TAX POSITIONS NOT MEETING THE MORE-LIKELY-THAN-NOT TEST, NO TAX BENEFIT WILL BE RECORDED. AS OF JULY 31, 2021 AND 2020, MANAGEMENT IS NOT AWARE OF ANY UNCERTAIN TAX POSITIONS. THE ASSOCIATION DOES NOT EXPECT THE TOTAL AMOUNT OF UNRECOGNIZED TAX BENEFITS TO SIGNIFICANTLY CHANGE IN THE NEXT 12 MONTHS. THE ASSOCIATION DID NOT RECOGNIZE OR ACCRUE ANY INTEREST OR PENALTIES RELATED TO UNCERTAIN TAX POSITIONS AS OF JULY 31, 2021 AND 2020, AND FOR THE YEARS THEN ENDED.
+IRS990 Schedule D > Supplemental Information Detail > Form And Line Reference Desc: Schedule D, Part XI, Line 4(b) Other revenues in form 990 not in audited financial statements
+IRS990 Schedule D > Supplemental Information Detail > Explanation: Rental Expenses - -1236767 cost of goods sold - -938 gain on sale of assets - 399 interest income - 1006 employee retention tax credit - 426155 Sales of Inventory - -5053
+IRS990 Schedule D > Supplemental Information Detail > Form And Line Reference Desc: Schedule D, Part XII, Line 2(d) Other expenses in audited financial statements not in form 990
+IRS990 Schedule D > Supplemental Information Detail > Explanation: Rental expenses - 1236767 Cost of goods sold - 938 Interest income - -1006 uncollectible pledge allowance - 92342 gain on sale of assets - -399 employee retention tax credit - -426155 sales of inventory - 5053
+IRS990 Schedule G > Mail Solicitations: X
+IRS990 Schedule G > Email Solicitations: X
+IRS990 Schedule G > Phone Solicitations: X
+IRS990 Schedule G > In Person Solicitations: X
+IRS990 Schedule G > Solicitation Of Non Govt Grants: X
+IRS990 Schedule G > Solicitation Of Govt Grants: X
+IRS990 Schedule G > Special Fundraising Events: X
+IRS990 Schedule G > Agrmt Prof Fundraising Acty: true
+IRS990 Schedule G > Fundraiser Activity Info Grp > Organization Business Name > Business Name Line1: Bennett Direct
+IRS990 Schedule G > Fundraiser Activity Info Grp > US Address > Address Line1: PO BOX 0015
+IRS990 Schedule G > Fundraiser Activity Info Grp > US Address > City Nm: Milwaukee
+IRS990 Schedule G > Fundraiser Activity Info Grp > US Address > State Abbreviation Cd: WI
+IRS990 Schedule G > Fundraiser Activity Info Grp > US Address > ZIP Cd: 53201
+IRS990 Schedule G > Fundraiser Activity Info Grp > Activity: TELEFUNDING
+IRS990 Schedule G > Fundraiser Activity Info Grp > Fundraiser Control Of Funds: false
+IRS990 Schedule G > Fundraiser Activity Info Grp > Gross Receipts: $660,013
+IRS990 Schedule G > Fundraiser Activity Info Grp > Retained By Contractor: $210,164
+IRS990 Schedule G > Fundraiser Activity Info Grp > Net To Organization: $449,849
+IRS990 Schedule G > Total Gross Receipts: $660,013
+IRS990 Schedule G > Total Retained By Contractors: $210,164
+IRS990 Schedule G > Total Net To Organization: $449,849
+IRS990 Schedule G > Licensed States Cd: TN
+IRS990 Schedule G > Fundraising Event Information Grp > Event1 Nm: Symphony Ball
+IRS990 Schedule G > Fundraising Event Information Grp > Gross Receipts Event1: $860,069
+IRS990 Schedule G > Fundraising Event Information Grp > Charitable Contri Event1: $840,359
+IRS990 Schedule G > Fundraising Event Information Grp > Gross Revenue Event1: $19,710
+IRS990 Schedule G > Fundraising Event Information Grp > Rent Facility Costs Event1: $24,339
+IRS990 Schedule G > Fundraising Event Information Grp > Food And Beverage Event1: $13,911
+IRS990 Schedule G > Fundraising Event Information Grp > Entertainment Event1: $190,762
+IRS990 Schedule G > Fundraising Event Information Grp > Other Direct Expenses Event1: $34,691
+IRS990 Schedule G > Fundraising Event Information Grp > Event2 Nm: Fashion Show
+IRS990 Schedule G > Fundraising Event Information Grp > Gross Receipts Event2: $377,307
+IRS990 Schedule G > Fundraising Event Information Grp > Charitable Contri Event2: $364,592
+IRS990 Schedule G > Fundraising Event Information Grp > Gross Revenue Event2: $12,715
+IRS990 Schedule G > Fundraising Event Information Grp > Rent Facility Costs Event2: $68,197
+IRS990 Schedule G > Fundraising Event Information Grp > Food And Beverage Event2: $12,891
+IRS990 Schedule G > Fundraising Event Information Grp > Entertainment Event2: $35,582
+IRS990 Schedule G > Fundraising Event Information Grp > Other Direct Expenses Event2: $27,495
+IRS990 Schedule G > Fundraising Event Information Grp > Gross Revenue Other Events: $0
+IRS990 Schedule G > Fundraising Event Information Grp > Gross Receipts Total: $1,237,376
+IRS990 Schedule G > Fundraising Event Information Grp > Charitable Contributions Tot: $1,204,951
+IRS990 Schedule G > Fundraising Event Information Grp > Gross Revenue Total Events: $32,425
+IRS990 Schedule G > Fundraising Event Information Grp > Rent Fclty Costs Total Events: $92,536
+IRS990 Schedule G > Fundraising Event Information Grp > Food And Beverage Total Events: $26,802
+IRS990 Schedule G > Fundraising Event Information Grp > Entertainment Total Events: $226,344
+IRS990 Schedule G > Fundraising Event Information Grp > Oth Direct Expnss Total Events: $62,186
+IRS990 Schedule G > Fundraising Event Information Grp > Direct Expense Summary Events: $407,868
+IRS990 Schedule G > Fundraising Event Information Grp > Net Income Summary: -$375,443
+IRS990 Schedule G > Supplemental Information Detail > Form And Line Reference Desc: Schedule G, Part I, Line 2b(ii) Describe the custody or control arrangement.
+IRS990 Schedule G > Supplemental Information Detail > Explanation: BENNETT DIRECT-FUNDS RAISED BY TELEFUNDING COMPANY ARE PROCESSED BY THE REPORTING ORGANIZATION; DONATED FUNDS ARE NEVER IN POSSESSION OF THE TELEFUNDING FIRM. TELEFUNDING FIRM RECEIVES PAYMENT FOR ITS SERVICES VIA DIRECT INVOICE TO ORGANIZATION.;
+IRS990 Schedule G > Supplemental Information Detail > Form And Line Reference Desc: Schedule G, Part I, Line 2b(v) payment of fees or payment of expenses
+IRS990 Schedule G > Supplemental Information Detail > Explanation: BENNETT DIRECT-CONTRACT PROVIDES FOR AN ANNUAL FEE PLUS HOURLY WAGES. ADDITIONALLY, CERTAIN EXPENSES, SUCH AS PRINTING, SUPPLIES, AND POSTAGE ARE REIMBURSED. IN FISCAL YEAR 2021, FEES TOTALED $210,164.;
+IRS990 Schedule J > Compensation Committee: X
+IRS990 Schedule J > Compensation Survey: X
+IRS990 Schedule J > Board Or Committee Approval: X
+IRS990 Schedule J > Severance Payment: false
+IRS990 Schedule J > Supplemental Nonqual Rtr Plan: false
+IRS990 Schedule J > Equity Based Comp Arrngm: false
+IRS990 Schedule J > Comp Based On Revenue Of Flng Org: false
+IRS990 Schedule J > Comp Bsd On Rev Related Orgs: false
+IRS990 Schedule J > Comp Bsd Net Earns Flng Org: false
+IRS990 Schedule J > Comp Bsd Net Earns Rltd Orgs: false
+IRS990 Schedule J > Any Non Fixed Payments: true
+IRS990 Schedule J > Initial Contract Exception: false
+IRS990 Schedule J > Rltd Org Officer Trst Key Empl Grp > Business Name > Business Name Line1: ALAN D VALENTINE
+IRS990 Schedule J > Rltd Org Officer Trst Key Empl Grp > Title: PRESIDENT & CEO
+IRS990 Schedule J > Rltd Org Officer Trst Key Empl Grp > Base Compensation Filing Org: $300,640
+IRS990 Schedule J > Rltd Org Officer Trst Key Empl Grp > Compensation Based On Rltd Orgs: $0
+IRS990 Schedule J > Rltd Org Officer Trst Key Empl Grp > Bonus Filing Organization Amount: 0
+IRS990 Schedule J > Rltd Org Officer Trst Key Empl Grp > Bonus Related Organizations: $0
+IRS990 Schedule J > Rltd Org Officer Trst Key Empl Grp > Other Compensation Filing Org: $6,600
+IRS990 Schedule J > Rltd Org Officer Trst Key Empl Grp > Other Compensation Rltd Orgs: $0
+IRS990 Schedule J > Rltd Org Officer Trst Key Empl Grp > Deferred Compensation Flng Org: $0
+IRS990 Schedule J > Rltd Org Officer Trst Key Empl Grp > Deferred Comp Rltd Orgs: $0
+IRS990 Schedule J > Rltd Org Officer Trst Key Empl Grp > Nontaxable Benefits Filing Org: $15,907
+IRS990 Schedule J > Rltd Org Officer Trst Key Empl Grp > Nontaxable Benefits Rltd Orgs: $0
+IRS990 Schedule J > Rltd Org Officer Trst Key Empl Grp > Total Compensation Filing Org: $323,147
+IRS990 Schedule J > Rltd Org Officer Trst Key Empl Grp > Total Compensation Rltd Orgs: $0
+IRS990 Schedule J > Rltd Org Officer Trst Key Empl Grp > Comp Report Prior990 Filing Org: $0
+IRS990 Schedule J > Rltd Org Officer Trst Key Empl Grp > Comp Report Prior990 Rltd Orgs: $0
+IRS990 Schedule J > Rltd Org Officer Trst Key Empl Grp > Business Name > Business Name Line1: MARYE WALKER LEWIS
+IRS990 Schedule J > Rltd Org Officer Trst Key Empl Grp > Title: CFO Consultant
+IRS990 Schedule J > Rltd Org Officer Trst Key Empl Grp > Base Compensation Filing Org: $168,902
+IRS990 Schedule J > Rltd Org Officer Trst Key Empl Grp > Compensation Based On Rltd Orgs: $0
+IRS990 Schedule J > Rltd Org Officer Trst Key Empl Grp > Bonus Filing Organization Amount: 0
+IRS990 Schedule J > Rltd Org Officer Trst Key Empl Grp > Bonus Related Organizations: $0
+IRS990 Schedule J > Rltd Org Officer Trst Key Empl Grp > Other Compensation Filing Org: $0
+IRS990 Schedule J > Rltd Org Officer Trst Key Empl Grp > Other Compensation Rltd Orgs: $0
+IRS990 Schedule J > Rltd Org Officer Trst Key Empl Grp > Deferred Compensation Flng Org: $0
+IRS990 Schedule J > Rltd Org Officer Trst Key Empl Grp > Deferred Comp Rltd Orgs: $0
+IRS990 Schedule J > Rltd Org Officer Trst Key Empl Grp > Nontaxable Benefits Filing Org: $6,616
+IRS990 Schedule J > Rltd Org Officer Trst Key Empl Grp > Nontaxable Benefits Rltd Orgs: $0
+IRS990 Schedule J > Rltd Org Officer Trst Key Empl Grp > Total Compensation Filing Org: $175,518
+IRS990 Schedule J > Rltd Org Officer Trst Key Empl Grp > Total Compensation Rltd Orgs: $0
+IRS990 Schedule J > Rltd Org Officer Trst Key Empl Grp > Comp Report Prior990 Filing Org: $0
+IRS990 Schedule J > Rltd Org Officer Trst Key Empl Grp > Comp Report Prior990 Rltd Orgs: $0
+IRS990 Schedule J > Rltd Org Officer Trst Key Empl Grp > Business Name > Business Name Line1: GIANCARLO GUERERRO
+IRS990 Schedule J > Rltd Org Officer Trst Key Empl Grp > Title: MUSIC DIRECTOR
+IRS990 Schedule J > Rltd Org Officer Trst Key Empl Grp > Base Compensation Filing Org: $222,917
+IRS990 Schedule J > Rltd Org Officer Trst Key Empl Grp > Compensation Based On Rltd Orgs: $0
+IRS990 Schedule J > Rltd Org Officer Trst Key Empl Grp > Bonus Filing Organization Amount: 50000
+IRS990 Schedule J > Rltd Org Officer Trst Key Empl Grp > Bonus Related Organizations: $0
+IRS990 Schedule J > Rltd Org Officer Trst Key Empl Grp > Other Compensation Filing Org: $0
+IRS990 Schedule J > Rltd Org Officer Trst Key Empl Grp > Other Compensation Rltd Orgs: $0
+IRS990 Schedule J > Rltd Org Officer Trst Key Empl Grp > Deferred Compensation Flng Org: $0
+IRS990 Schedule J > Rltd Org Officer Trst Key Empl Grp > Deferred Comp Rltd Orgs: $0
+IRS990 Schedule J > Rltd Org Officer Trst Key Empl Grp > Nontaxable Benefits Filing Org: $14,892
+IRS990 Schedule J > Rltd Org Officer Trst Key Empl Grp > Nontaxable Benefits Rltd Orgs: $0
+IRS990 Schedule J > Rltd Org Officer Trst Key Empl Grp > Total Compensation Filing Org: $287,809
+IRS990 Schedule J > Rltd Org Officer Trst Key Empl Grp > Total Compensation Rltd Orgs: $0
+IRS990 Schedule J > Rltd Org Officer Trst Key Empl Grp > Comp Report Prior990 Filing Org: $0
+IRS990 Schedule J > Rltd Org Officer Trst Key Empl Grp > Comp Report Prior990 Rltd Orgs: $0
+IRS990 Schedule J > Rltd Org Officer Trst Key Empl Grp > Business Name > Business Name Line1: DANIEL B GROSSMAN
+IRS990 Schedule J > Rltd Org Officer Trst Key Empl Grp > Title: VP OF MARKETING
+IRS990 Schedule J > Rltd Org Officer Trst Key Empl Grp > Base Compensation Filing Org: $150,608
+IRS990 Schedule J > Rltd Org Officer Trst Key Empl Grp > Compensation Based On Rltd Orgs: $0
+IRS990 Schedule J > Rltd Org Officer Trst Key Empl Grp > Bonus Filing Organization Amount: 6879
+IRS990 Schedule J > Rltd Org Officer Trst Key Empl Grp > Bonus Related Organizations: $0
+IRS990 Schedule J > Rltd Org Officer Trst Key Empl Grp > Other Compensation Filing Org: $0
+IRS990 Schedule J > Rltd Org Officer Trst Key Empl Grp > Other Compensation Rltd Orgs: $0
+IRS990 Schedule J > Rltd Org Officer Trst Key Empl Grp > Deferred Compensation Flng Org: $0
+IRS990 Schedule J > Rltd Org Officer Trst Key Empl Grp > Deferred Comp Rltd Orgs: $0
+IRS990 Schedule J > Rltd Org Officer Trst Key Empl Grp > Nontaxable Benefits Filing Org: $0
+IRS990 Schedule J > Rltd Org Officer Trst Key Empl Grp > Nontaxable Benefits Rltd Orgs: $0
+IRS990 Schedule J > Rltd Org Officer Trst Key Empl Grp > Total Compensation Filing Org: $157,487
+IRS990 Schedule J > Rltd Org Officer Trst Key Empl Grp > Total Compensation Rltd Orgs: $0
+IRS990 Schedule J > Rltd Org Officer Trst Key Empl Grp > Comp Report Prior990 Filing Org: $0
+IRS990 Schedule J > Rltd Org Officer Trst Key Empl Grp > Comp Report Prior990 Rltd Orgs: $0
+IRS990 Schedule J > Supplemental Information Detail > Form And Line Reference Desc: Schedule J, Part I, Line 7 Non-fixed payments
+IRS990 Schedule J > Supplemental Information Detail > Explanation: The Vice President of Marketing receives a base salary plus commission. The commission is based upon meeting & exceeding ticket sales goals.
+IRS990 Schedule J > Supplemental Information Detail > Form And Line Reference Desc: Schedule J, Part I, Line 3 COMPENSATION OF TOP MANAGEMENT OFFICIALS
+IRS990 Schedule J > Supplemental Information Detail > Explanation: THE BOARD OF DIRECTORS DELEGATES RESPONSIBILITY TO THE EXECUTIVE COMMITTEE, WHICH ACTS AS THE COMPENSATION COMMITTEE, FOR THE REVIEW AND APPROVAL OF THE COMPENSATION OF THE ORGANIZATION'S TOP MANAGEMENT OFFICIALS.
+IRS990 Schedule L > Loans Btwn Org Interested Prsn Grp > Business Name > Business Name Line1: SYMPLACE REALTY
+IRS990 Schedule L > Loans Btwn Org Interested Prsn Grp > Relationship With Org: DIRECTOR MARTHA INGRAM
+IRS990 Schedule L > Loans Btwn Org Interested Prsn Grp > Loan Purpose: MORTGAGE ON SYMPHONY FACILITY
+IRS990 Schedule L > Loans Btwn Org Interested Prsn Grp > Loan To Organization: X
+IRS990 Schedule L > Loans Btwn Org Interested Prsn Grp > Original Principal: $23,250,000
+IRS990 Schedule L > Loans Btwn Org Interested Prsn Grp > Balance Due: $20,000,000
+IRS990 Schedule L > Loans Btwn Org Interested Prsn Grp > Default: false
+IRS990 Schedule L > Loans Btwn Org Interested Prsn Grp > Board Or Committee Approval: true
+IRS990 Schedule L > Loans Btwn Org Interested Prsn Grp > Written Agreement: true
+IRS990 Schedule L > Total Balance Due: $20,000,000
+IRS990 Schedule O > Supplemental Information Detail > Form And Line Reference Desc: Form 990, Part VI, Line 1a Delegate broad authority to a committee
+IRS990 Schedule O > Supplemental Information Detail > Explanation: ARTICLE 4 (of Bylaws) EXECUTIVE COMMITTEE 4.1 Delegation of Power to Executive Committee. (a) The Executive Committee shall manage the business and affairs of the Association except as otherwise limited by these Bylaws, the Charter or the Act. The Executive Committee may advise the Board on all matters and shall report to the Board on all decisions made or actions taken by it which the Executive Committee or the Chairman reasonably determine to be major decisions or actions. The Executive Committee shall be assisted by such administrative staff as the Chairman or the President and CEO may determine. Except as otherwise provided in this Article, the provisions of Article 5 shall apply to the Executive Committee. (b) The Executive Committee shall have the power and authority (i) to appoint, negotiate and approve the terms of employment of, and evaluate the performance of the President and CEO and the Music Director and Conductor; (ii) approve agreements with the Musicians' Union (with any member who is an Orchestra Member being excluded, except by invitation of the Chairman); (iii) monitor compliance with the budget; (iv) establish and implement operating policies and procedures; (v) supervise the operations and functions of the other committees and receive reports from these committees on request or as required by these Bylaws; (vi) approve the creation of committees of the Board other than the committees created by these Bylaws and the appointment or removal of members of all committees and (vii) approve a sale, lease or pledge of less than all or substantially all of the assets of the Association. The Executive Committee shall have no power to amend any resolution of the Board or the budget. During discussions of salary, any collective bargaining negotiations, or other matters involving individual employees, the Executive Committee may exclude Association employees. 4.2 Number, Election and Term. (a) The Executive Committee shall have at least thirteen (13) and no more than seventeen (17) members, all of whom shall be directors. The Executive Committee shall be comprised of the elected officers of the Association, the President and CEO, the required Orchestra Member, the chairman of the Associate Board, the chairman of the Annual Campaign, the chairman of any capital campaign underway and the chairmen of the following committees: Artistic Planning, Governance, Strategic Planning, Marketing, Development, External Affairs and the Schermerhorn Symphony Center Committee. Subject to the limit on total members, other directors may be nominated by the Governance Committee and elected by the Board. Each member shall consent to serve prior to his or her nomination by the Governance Committee. (b) The members of the committee will be elected or appointed for minimum two-year terms, and members shall serve until their successors are elected or appointed and qualified. No member of the Executive Committee shall serve more than three consecutive two-year terms, and a former member may be re-elected or re-appointed following a one-year absence from the Executive Committee. (c) The members shall serve at the pleasure of the Executive Committee and the Board, and the Executive Committee or Board may remove any elected member at any time, with or without cause. 4.3 Meetings. Regular meetings of the Executive Committee shall be held every other month unless otherwise determined by the Chairman. Special meetings may be called at any time by an officer or any five (5) members of the Executive Committee. 4.4 Telephonic Meetings. The Executive Committee may permit any of its members to participate in any meeting by, or conduct the meeting through the use of, any means of communication by which all members participating may simultaneously hear each other during the meeting. 4.5 Quorum and Voting. At all meetings of the Executive Committee, the presence of a majority of the voting members shall constitute a quorum. Each member shall have one vote on all matters properly coming before the meeting. If a quorum is present when a vote is taken, the affirmative vote of a majority of members present is an act of the committee unless the Act, the Charter or these Bylaws require the vote of a greater number.
+IRS990 Schedule O > Supplemental Information Detail > Form And Line Reference Desc: Form 990, Part VI, Line 2 Family/business relationships amongst interested persons
+IRS990 Schedule O > Supplemental Information Detail > Explanation: ORRIN INGRAM AND MARTHA INGRAM - Family relationship
+IRS990 Schedule O > Supplemental Information Detail > Form And Line Reference Desc: Form 990, Part VI, Line 11b Review of form 990 by governing body
+IRS990 Schedule O > Supplemental Information Detail > Explanation: The Form 990 is prepared by the Controller; a draft is reviewed by the organization's public accounting firm, the CFO consultant, the Board Treasurer, and Audit Committee Chair. A full copy of the 990, including supplemental schedules, is provided to the full governing body after filing.
+IRS990 Schedule O > Supplemental Information Detail > Form And Line Reference Desc: Form 990, Part VI, Line 12c Conflict of interest policy
+IRS990 Schedule O > Supplemental Information Detail > Explanation: 2.8 Conflict of Interest. (from Bylaws of Organization) (a) The President and CEO shall be responsible for maintaining a written conflict of interest policy for the Association approved by the Board of Directors. This policy shall address conflict of interest related to any director, officer, committee member, or administrative staff member of the Association. (b) Generally speaking, for directors, a conflict of interest is a situation in which a director or one of his or her family members has a direct or indirect personal or financial interest that compromises or could compromise the director's independence of judgment in exercising his or her responsibilities to the Association. When any conflict of interest relates to a matter requiring action by the Board of Directors or any Committee, the interested person shall call it to the attention of the Board of Directors or the Committee before which the matter is pending, as applicable. Any other Board or Committee member may call the matter to the attention of the Board or Committee, as applicable. The interested person shall not deliberate or vote on the matter; provided, however, that any director disclosing a conflict of interest may be counted in determining the presence of a quorum at a meeting of the Board of Directors or the Executive Committee. (c) Unless requested to remain present during the meeting, the interested person shall retire from the room in which the Board of Directors or Executive Committee is meeting, and shall not participate in the final deliberation or decision regarding the matter under consideration. However, the interested person shall provide the Board or Committee, as applicable with any and all relevant information. (d) The minutes of the meeting of the Board or any Committee, as applicable, shall reflect that the conflict of interest was disclosed, that the interested person did not participate in the final discussion or vote and did not vote, and the rationale for approving the action.
+IRS990 Schedule O > Supplemental Information Detail > Form And Line Reference Desc: Form 990, Part VI, Line 15a Process to establish compensation of top management official
+IRS990 Schedule O > Supplemental Information Detail > Explanation: The Executive and Finance Committees of the board review and approve compensation for management, musicians, and staff as part of the annual budget approval process. The compensation structure and CBA are both reviewed and approved in detail by the committees annually. This was last completed during July of 2021.
+IRS990 Schedule O > Supplemental Information Detail > Form And Line Reference Desc: Form 990, Part VI, Line 15b Process to establish compensation of other employees
+IRS990 Schedule O > Supplemental Information Detail > Explanation: The Executive and Finance Committees of the board review and approve compensation for management, musicians, and staff as part of the annual budget approval process. The compensation structure and CBA are both reviewed and approved in detail by the committees annually. This was last completed during July of 2021.
+IRS990 Schedule O > Supplemental Information Detail > Form And Line Reference Desc: Form 990, Part VI, Line 18 How forms are made available to the public
+IRS990 Schedule O > Supplemental Information Detail > Explanation: The Form 990 is available on the organization's website. The Form 990, Form 990-T, and Form 1023 are available for public inspection upon request.
+IRS990 Schedule O > Supplemental Information Detail > Form And Line Reference Desc: Form 990, Part VI, Line 19 Required documents available to the public
+IRS990 Schedule O > Supplemental Information Detail > Explanation: Governing documents and conflict of interest policies are not required disclosures pursuant to Internal Revenue Code (IRC) Section 6104 and are not available to the public at this time. The Nashville Symphony does, however, make its annual financial audit & the 990 available on its own website.
+IRS990 Schedule O > Supplemental Information Detail > Form And Line Reference Desc: Form 990, Part VII, Section A COMPENSATION OF DIRECTORS
+IRS990 Schedule O > Supplemental Information Detail > Explanation: FIVE BOARD MEMBERS SERVED AS EMPLOYED MUSICIANS OF THE NASHVILLE SYMPHONY ORCHESTRA AND RECEIVED COMPENSATION IN THEIR CAPACITY AS MUSICIANS OF THE ORCHESTRA. NONE OF THE LISTED COMPENSATION AT PART VII, SECTION A IS FOR THEIR ROLES AS BOARD MEMBERS. THESE INDIVIDUALS ARE LISTED BELOW: CHRISTOPHER FARRELL MICHELLE COLLINS DEREK HAWKES Steven Brown CLARE YANG
+IRS990 Schedule O > Supplemental Information Detail > Form And Line Reference Desc: Form 990, Part XI, Line 9 Other changes in net assets or fund balances
+IRS990 Schedule O > Supplemental Information Detail > Explanation: UNCOLLECTIBLE PLEDGES - -92342;
+IRS990 Schedule R > Id Related Org Txbl Corp Tr Grp > Related Organization Name > Business Name Line1: NASHVILLE SYMPHONY ENDOWMENT TRUST
+IRS990 Schedule R > Id Related Org Txbl Corp Tr Grp > US Address > Address Line1: CUMBERLAND TRUST
+IRS990 Schedule R > Id Related Org Txbl Corp Tr Grp > US Address > Address Line2: 40 BURTON HILLS BLVD STE 300
+IRS990 Schedule R > Id Related Org Txbl Corp Tr Grp > US Address > City Nm: NASHVILLE
+IRS990 Schedule R > Id Related Org Txbl Corp Tr Grp > US Address > State Abbreviation Cd: TN
+IRS990 Schedule R > Id Related Org Txbl Corp Tr Grp > US Address > ZIP Cd: 37215
+IRS990 Schedule R > Id Related Org Txbl Corp Tr Grp > EIN: 620550979
+IRS990 Schedule R > Id Related Org Txbl Corp Tr Grp > Primary Activities: INVESTMENTS
+IRS990 Schedule R > Id Related Org Txbl Corp Tr Grp > Legal Domicile State Cd: TN
+IRS990 Schedule R > Id Related Org Txbl Corp Tr Grp > Direct Controlling Entity Name > Business Name Line1: NASHVILLE SYMPHONY ASSOCIATION
+IRS990 Schedule R > Id Related Org Txbl Corp Tr Grp > Entity Type: Trust
+IRS990 Schedule R > Id Related Org Txbl Corp Tr Grp > Controlled Organization: true
+IRS990 Schedule R > Receipt Of Int Annts Rnts Rylts: false
+IRS990 Schedule R > Gift Grnt Or Cap Contri To Oth Org: false
+IRS990 Schedule R > Gift Grnt Cap Contri From Oth Org: false
+IRS990 Schedule R > Loans Or Guarantees To Other Org: false
+IRS990 Schedule R > Loans Or Guarantees From Oth Org: false
+IRS990 Schedule R > Div Related Organization: false
+IRS990 Schedule R > Asset Sale To Other Org: false
+IRS990 Schedule R > Asset Purchase From Other Org: false
+IRS990 Schedule R > Asset Exchange: false
+IRS990 Schedule R > Rental Of Facilities To Oth Org: false
+IRS990 Schedule R > Rental Of Fclts From Oth Org: false
+IRS990 Schedule R > Perform Of Services For Oth Org: false
+IRS990 Schedule R > Perform Of Services By Other Org: false
+IRS990 Schedule R > Sharing Of Facilities: false
+IRS990 Schedule R > Paid Employees Sharing: false
+IRS990 Schedule R > Reimbursement Paid To Other Org: false
+IRS990 Schedule R > Reimbursement Paid By Other Org: false
+IRS990 Schedule R > Transfer To Other Org: true
+IRS990 Schedule R > Transfer From Other Org: true
+IRS990 Schedule R > Transactions Related Org Grp > Other Organization Name > Business Name Line1: NASHVILLE SYMPHONY ENDOWMENT TRUST
+IRS990 Schedule R > Transactions Related Org Grp > Transaction Type: S
+IRS990 Schedule R > Transactions Related Org Grp > Involved: $530,121
+IRS990 Schedule R > Transactions Related Org Grp > Method Of Amount Determination: CASH
+IRS990 Schedule R > Transactions Related Org Grp > Other Organization Name > Business Name Line1: NASHVILLE SYMPHONY ENDOWMENT TRUST
+IRS990 Schedule R > Transactions Related Org Grp > Transaction Type: R
+IRS990 Schedule R > Transactions Related Org Grp > Involved: $593,633
+IRS990 Schedule R > Transactions Related Org Grp > Method Of Amount Determination: CASH
