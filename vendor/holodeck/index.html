@@ -3406,16 +3406,22 @@ class Component extends DCLogic {
         }
         const buf = await (await fetch(raw + enc(f.path))).arrayBuffer();
         const r = await readAny(new File([buf], f.path.split('/').pop(), { type: 'application/pdf' }));
-        let ocr = ''; try { const o = await fetch(raw + enc(f.path.replace(/\.pdf$/i, '.ocr.txt')), { cache: 'no-cache' }); if (o.ok) ocr = await o.text(); } catch (e) {}
+        let ocr = ''; let words = null;
+        if (!(r.text || '').trim()) { try { const o = await fetch(raw + enc(f.path.replace(/\.pdf$/i, '.ocr.json')), { cache: 'no-cache' }); if (o.ok) words = await o.json(); } catch (e) {} }
+        if (words && words.pages) { // word boxes: the page image gets an invisible layer of these words, so names, figures and dates are clickable on the scan itself
+          let text = ''; const pages = []; words.pages.forEach(pg => { pages.push(text.length); pg.words.forEach(w => { text += w[0] + (w[5] ? '\n' : ' '); }); text += '\n'; });
+          r.text = text; r.pages = pages; r.ocr = words; r.note = 'The pages shown are the IRS original; the text read from them is OCR of the scan, so a figure can be misread.';
+        } else if (!(r.text || '').trim()) { try { const o = await fetch(raw + enc(f.path.replace(/\.pdf$/i, '.ocr.txt')), { cache: 'no-cache' }); if (o.ok) ocr = await o.text(); } catch (e) {} }
         if (ocr.trim() && !(r.text || '').trim()) {
           const pg = ocr.split('\f'); while (pg.length && !pg[pg.length - 1].trim()) pg.pop();
           let text = ''; const pages = []; pg.forEach(t => { pages.push(text.length); text += t.replace(/\s+$/, '') + '\n\n'; });
           r.text = text; r.pages = pages; r.ocr = true; r.note = 'The pages shown are the IRS original; the text read from them is OCR of the scan, so a figure can be misread.';
         }
         const url = m.view_url || m.irs_url || ('https://github.com/' + owner + '/' + repo + '/blob/HEAD/' + f.path);
-        const ex = (this.state.added[this.corpusId()] || []).find(d => d.url === url); // already loaded on an earlier visit: keep it, but make sure its original PDF is stored (earlier versions could not store it)
-        if (ex) { if (r.pdf && !(await idbGet('pdf:' + ex.id).catch(() => null))) await idbPut('pdf:' + ex.id, r.pdf).catch(e => console.warn('Could not keep the original PDF of ' + ex.title + ':', e)); had++; continue; }
-        docs.push({ ...r, title: ttl || r.title, year: m.tax_year ? +m.tax_year : r.year, type: 'Form ' + (m.form || '990'), url });
+        let ex = (this.state.added[this.corpusId()] || []).find(d => d.url === url);
+        if (ex && r.ocr && !ex.ocrWords) { const cid = this.corpusId(), old = ex.id; const added = { ...this.state.added, [cid]: this.state.added[cid].filter(d => d.id !== old) }; this.saveAdded(added); this.state.added = added; this.setState({ added }); ex = null; } // text from an earlier OCR does not match the word boxes: replace it // already loaded on an earlier visit: keep it, but make sure its original PDF is stored (earlier versions could not store it)
+        if (ex) { if (r.pdf && !(await idbGet('pdf:' + ex.id).catch(() => null))) await idbPut('pdf:' + ex.id, r.pdf).catch(e => console.warn('Could not keep the original PDF of ' + ex.title + ':', e)); if (r.ocr && !(await idbGet('ocr:' + ex.id).catch(() => null))) await idbPut('ocr:' + ex.id, r.ocr).catch(() => {}); had++; continue; }
+        docs.push({ ...r, title: ttl || r.title, year: m.tax_year ? +m.tax_year : r.year, type: 'Form ' + (m.form || '990'), url, extra: r.ocr ? { ...(r.extra || {}), ocrWords: true } : r.extra });
       } catch (e) {}
     }
     if (!docs.length && had) { A.status = ''; this.setState({ busy: '' }); this.forceUpdate(); return; } // every filing was already here
@@ -4703,6 +4709,7 @@ class Component extends DCLogic {
       const pdfjs = await pdfLib(); const pdf = await pdfjs.getDocument({ data: new Uint8Array(buf).slice() }).promise;
       if (this._rKey !== key) return; el.innerHTML = ''; this._ptr = { S: 0, M: 0 }; let off = 0; const W = Math.min(el.clientWidth || 760, 900);
       const mctx = document.createElement('canvas').getContext('2d');
+      let ocrW = null; try { ocrW = await idbGet('ocr:' + d.id); } catch (e) {} // LOCAL PATCH: word boxes of a scanned filing
       for (let i = 1; i <= Math.min(pdf.numPages, PDF_MAX_PAGES); i++) {
         if (this._rKey !== key) return;
         const page = await pdf.getPage(i); const v1 = page.getViewport({ scale: 1 }); const scale = W / v1.width; const vp = page.getViewport({ scale }); const dpr = window.devicePixelRatio || 1;
@@ -4712,7 +4719,14 @@ class Component extends DCLogic {
         wrap.appendChild(cv); wrap.appendChild(layer); el.appendChild(wrap);
         await page.render({ canvasContext: cv.getContext('2d'), viewport: page.getViewport({ scale: scale * dpr }) }).promise;
         const tc = await page.getTextContent();
-        for (const it of tc.items) {
+        const ow = ocrW && !tc.items.length && ocrW.pages[i - 1];
+        if (ow) for (const wd of ow.words) { // same bookkeeping as a text item (length + 1), so the marks line up with the text the reader was given
+          const t = wd[0], s = off; off += t.length + 1; const hh = wd[4] * vp.height;
+          const sp = document.createElement('span'); sp.style.cssText = 'position:absolute;left:' + (wd[1] * vp.width) + 'px;top:' + (wd[2] * vp.height) + 'px;font:' + hh + 'px sans-serif;white-space:pre;color:transparent;transform-origin:0 0';
+          mctx.font = hh + 'px sans-serif'; const nat = mctx.measureText(t).width || 1; const tw = wd[3] * vp.width; if (tw > 0) sp.style.transform = 'scaleX(' + (tw / nat) + ')';
+          const fr = this.makeFrag(t, s, R, true, A); if (fr) sp.appendChild(fr); else sp.textContent = t; layer.appendChild(sp);
+        }
+        for (const it of (ow ? [] : tc.items)) {
           const s = off; off += (it.str || '').length + 1; if (!it.str || !it.str.trim()) continue;
           const tx = pdfjs.Util.transform(vp.transform, it.transform); const h = Math.hypot(tx[2], tx[3]) || 10; const w = (it.width || 0) * scale;
           const sp = document.createElement('span'); sp.style.cssText = 'position:absolute;left:' + tx[4] + 'px;top:' + (tx[5] - h) + 'px;font:' + h + 'px sans-serif;white-space:pre;color:transparent;transform-origin:0 0';
@@ -4978,7 +4992,7 @@ class Component extends DCLogic {
     } catch (e) { hdT('hang', 'fail', 'Hang decision failed (' + e.message + '); proceeding unhung'); }
     nd.forEach(d => { d.status = aopt && aopt.open ? 'seen' : 'source'; });
     T.focus = new Set(nd.map(d => d.id)); nd.forEach(d => hdT('store', 'mint', 'Stored \u201c' + hdCut(d.title, 60) + '\u201d as ' + d.id + (list[nd.indexOf(d)].html ? ' \u00b7 full page kept; ' + d.text.length.toLocaleString() + ' characters indexed for search' + (d.text.length >= 60000 ? ' (the cap; the reading below uses the whole page)' : '') : ' \u00b7 ' + d.text.length.toLocaleString() + ' characters kept'), { doc: d.id }));
-    nd.forEach((d, i) => { const x = list[i]; if (x.html) { this._html[d.id] = x.html; idbPut('html:' + d.id, x.html).catch(() => {}); } if (x.pdf) idbPut('pdf:' + d.id, x.pdf).catch(e => console.warn('Could not keep the original PDF of ' + d.title + ':', e)); if (x.buf) idbPut('media:' + d.id, x.buf).catch(() => {}); });
+    nd.forEach((d, i) => { const x = list[i]; if (x.html) { this._html[d.id] = x.html; idbPut('html:' + d.id, x.html).catch(() => {}); } if (x.pdf) idbPut('pdf:' + d.id, x.pdf).catch(e => console.warn('Could not keep the original PDF of ' + d.title + ':', e)); if (x.buf) idbPut('media:' + d.id, x.buf).catch(() => {}); if (x.ocr) idbPut('ocr:' + d.id, x.ocr).catch(e => console.warn('Could not keep the OCR word boxes of ' + d.title + ':', e)); });
     let engNote = null; { const live = nd.filter(d => d.text && !d.measured); let ok = 0, miss = 0;
       if (live.length) this.setState({ busy: 'Reading ' + (live.length === 1 ? 'it' : live.length + ' sources') + ' with the engine…' });
       for (const d of live) { const t0 = HD_TR ? performance.now() - HD_TR.t0 : 0, got = await hdEngineRead(d.title, d.text);
