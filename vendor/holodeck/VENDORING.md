@@ -34,3 +34,4 @@ date: 2026-09-25T19:46:51Z
 
 ## Vendored into nashville-symphony-990s
 Copied unchanged from clovenbradshaw-ctrl/holodeck @9591fbd (2026-09-30) except one local patch in index.html: a `?repo=owner/name` query parameter calls `pullRepo` on load. Re-vendor by copying upstream over this directory and re-applying that patch (search "LOCAL PATCH").
+Also added: `holodeck-echo.js`, copied from a local, uncommitted checkout of holodeck (2026-09-30). Upstream `index.html` at @9591fbd loads `./holodeck-echo.js` but the file was never committed, so without it analysis throws `HDEcho is not defined`. Replace with the upstream file once it is committed there.
