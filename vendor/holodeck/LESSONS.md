@@ -22,4 +22,6 @@ What building the Nashville Symphony 990 explorer taught, written so it applies 
 
 **10. Big derived files cost every deploy.** 35 MB of OCR word boxes made each Pages build take minutes. Generate sidecars deterministically, keep them beside their source, and consider a release asset or LFS before adding more.
 
+**11. Discovery needs a null.** Topic discovery proposed a topic called "XK" and suggested "Form" as the topic. With thirteen near-identical forms, nearly every name is template, so the only names left to link on were OCR noise, and the noise became the label. Only propose a grouping when it separates things: skip it when nearly every source is the same kind of document, require a label that looks like a name, and never suggest a word that most sources already contain. Checked with a small harness that runs the real `paradigms()` on fake workspaces (same-kind forms with a junk link, mixed kinds with a junk label, mixed kinds with a real name, two real kinds).
+
 **Known gaps:** no chart or table generator is wired into the UI (the-fold's `chartFrom`/`tables.js` and eoreader7's `measure.js` exist); `findFigures` drops bare numbers; Connections links names only; topic discovery names form text.

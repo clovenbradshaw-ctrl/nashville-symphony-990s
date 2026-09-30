@@ -2780,9 +2780,15 @@ function analyze(corpus, htmlMap) {
 // several of the same names together) still can. A lone, unconnected document is never a paradigm -- by
 // definition a paradigm is a pattern across more than one source -- so single-document components are
 // counted only in strayN, never labelled or offered individually.
+// LOCAL PATCH: a topic label must look like a real name: a word of four or more letters, a vowel, no all-caps fragment, and no stray
+// one- or two-letter tokens. OCR noise ("XK"), form codes ("Part I S") and fragments fail; "Nashville Symphony" and "Schermerhorn" pass.
+const topicLabelOK = nm => { const w = String(nm || '').trim(); return /[A-Za-z]{4,}/.test(w) && /[aeiouyAEIOUY]/.test(w) && !/^[A-Z0-9 .&-]{1,5}$/.test(w) && w.split(/\s+/).every(t => t.length > 2 || /^(of|de|la|le|da|du|st|dr|mr|vs)$/i.test(t)); };
 function paradigms(A) {
   const none = { groups: [], strayN: 0 };
   if (A.docs.length < 2) return none;
+  // Topics exist to tell unlike documents apart. When nearly every source is the same kind of document (same type: thirteen Form 990s),
+  // the names they share come from the template, and what is left to link on is noise, so there is nothing to discover.
+  { const byType = {}; A.docs.forEach(d => { const k = d.type || d.kind || 'Source'; byType[k] = (byType[k] || 0) + 1; }); if (A.docs.length >= 3 && Math.max(...Object.values(byType)) >= 0.8 * A.docs.length) return none; }
   const hubFloor = Math.sqrt(A.docs.length) + 1;
   const pairShared = new Map(); const nonHubNames = {};
   Object.values(A.names).forEach(n => { if (n.docs.size < 2 || n.docs.size > hubFloor) return; const ds = [...n.docs].sort();
@@ -2814,10 +2820,11 @@ function paradigms(A) {
     const idSet = new Set(ds.map(d => d.id)); let best = null, bestN = 0;
     // most mentions inside this component, not full containment -- a component can be a chain (A-B via one
     // name, B-C via another) with no single name spanning every member, and still be a real paradigm
-    Object.values(A.names).forEach(n => { if (n.docs.size > hubFloor) return; const inside = n.sts.filter(id => idSet.has(A.byId[id].doc)).length; if (inside > bestN) { bestN = inside; best = n; } });
-    return { docs: ds, label: best ? best.name : ds[0].title, n: ds.length };
-  }).sort((a, b) => b.n - a.n);
-  return { groups: groupsOut, strayN };
+    Object.values(A.names).forEach(n => { if (n.docs.size > hubFloor || !topicLabelOK(n.name)) return; const inside = n.sts.filter(id => idSet.has(A.byId[id].doc)).length; if (inside > bestN) { bestN = inside; best = n; } });
+    return best ? { docs: ds, label: best.name, n: ds.length } : null; // LOCAL PATCH: no acceptable label, no topic
+  }).filter(Boolean).sort((a, b) => b.n - a.n);
+  if (!groupsOut.length) return { groups: [], strayN: A.docs.length };
+  return { groups: groupsOut, strayN: A.docs.length - groupsOut.reduce((t, g) => t + g.n, 0) };
 }
 const QW = new Set('who whom whose what when where why how which did does do is are was were can could should has have had will would much many the a an of to in on at for by with and or from about as be been it its this that there any some between into than then them they their our your my me i we you us all'.split(' '));
 const qStem = w => w.length > 4 ? w.replace(/(ings|ing|ied|ies|ed|es|s)$/, '') : w;
@@ -5347,8 +5354,9 @@ class Component extends DCLogic {
         onKeep: () => this.setMeta(d.id, { status: 'source' }), onUnkeep: () => this.setMeta(d.id, { status: 'seen' }), onDiscard: () => this.discard(d.id) }; };
     const seenDocs = A.docs.filter(d => this.mOf(d).status === 'seen');
     const titles = A.docs.filter(d => this._cnt.has(d.id)).map(d => d.title.toLowerCase());
-    const inferred = D.nameList.filter(n => n.name.length > 3 && titles.some(t => t.includes(n.name.toLowerCase()))).sort((a, b) => b.docs.size - a.docs.size || b.sts.length - a.sts.length)[0]
-      || D.nameList.slice().sort((a, b) => b.docs.size - a.docs.size || b.sts.length - a.sts.length)[0];
+    // LOCAL PATCH: the suggested topic must look like a name, and a word found in most titles ("Form") separates nothing
+    const inferred = D.nameList.filter(n => topicLabelOK(n.name) && titles.some(t => t.includes(n.name.toLowerCase())) && titles.filter(t => t.includes(n.name.toLowerCase())).length <= Math.floor(titles.length / 2)).sort((a, b) => b.docs.size - a.docs.size || b.sts.length - a.sts.length)[0]
+      || D.nameList.filter(n => topicLabelOK(n.name) && n.docs.size <= Math.floor(titles.length / 2)).sort((a, b) => b.docs.size - a.docs.size || b.sts.length - a.sts.length)[0];
     const keptDocs = A.docs.filter(d => this.mOf(d).status !== 'seen');
     const stsOf = d => A.stsByDoc[d.id] || [];
     const hasT = t => st => st.names.some(n => A.names[n] && A.names[n].type === t);
